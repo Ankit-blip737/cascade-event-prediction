@@ -1,0 +1,190 @@
+{
+  "params": {
+    "officers": 12,
+    "barricades": 8,
+    "radius_km": 3.0,
+    "manpower": 60,
+    "min_sep_km": 0.5,
+    "scope": "test",
+    "predict_weight": 0.0,
+    "horizon_h": 24.0,
+    "mode": "REACTIVE"
+  },
+  "coverage": {
+    "covered_severity_min": 756976.6,
+    "total_severity_min": 839036.1,
+    "covered_fraction": 0.9022
+  },
+  "officers": [
+    {
+      "node_id": 217,
+      "junction": "PurnimaTheaterJunc",
+      "lat": 12.96045045,
+      "lon": 77.5875364,
+      "covered_severity_min": 136532.4,
+      "headcount": 11
+    },
+    {
+      "node_id": 130,
+      "junction": "KCG HospitalJunction",
+      "lat": 12.99931805,
+      "lon": 77.57141139999999,
+      "covered_severity_min": 133854.6,
+      "headcount": 11
+    },
+    {
+      "node_id": 135,
+      "junction": "Kadubeesanahalli-ORR Junc",
+      "lat": 12.93878497,
+      "lon": 77.697052,
+      "covered_severity_min": 85366.1,
+      "headcount": 7
+    },
+    {
+      "node_id": 143,
+      "junction": "KensingtonOvalJunc",
+      "lat": 12.9821285,
+      "lon": 77.6236031,
+      "covered_severity_min": 68893.4,
+      "headcount": 5
+    },
+    {
+      "node_id": 22,
+      "junction": "BEL Circle",
+      "lat": 13.0439997,
+      "lon": 77.5564883,
+      "covered_severity_min": 64368.2,
+      "headcount": 5
+    },
+    {
+      "node_id": 117,
+      "junction": "JP Nagar 15th cross junction",
+      "lat": 12.9060618,
+      "lon": 77.5856503,
+      "covered_severity_min": 62067.2,
+      "headcount": 5
+    },
+    {
+      "node_id": 251,
+      "junction": "SilkBoardJunc",
+      "lat": 12.9166927,
+      "lon": 77.6232459,
+      "covered_severity_min": 54658.7,
+      "headcount": 4
+    },
+    {
+      "node_id": 5,
+      "junction": "5thMainRPC Layout-Vijayanagar",
+      "lat": 12.9660024,
+      "lon": 77.5353515,
+      "covered_severity_min": 41920.3,
+      "headcount": 3
+    },
+    {
+      "node_id": 283,
+      "junction": "VishweswaraiahJunctio(Uttamsagar)",
+      "lat": 13.01136787,
+      "lon": 77.64639437,
+      "covered_severity_min": 30201.5,
+      "headcount": 2
+    },
+    {
+      "node_id": 279,
+      "junction": "VeerannapalyaJunction(BEL,HO)",
+      "lat": 13.0416234,
+      "lon": 77.6135233,
+      "covered_severity_min": 29806.8,
+      "headcount": 2
+    },
+    {
+      "node_id": 81,
+      "junction": "ESI(k r puram)",
+      "lat": 12.9930024,
+      "lon": 77.7063512,
+      "covered_severity_min": 25150.8,
+      "headcount": 2
+    },
+    {
+      "node_id": 122,
+      "junction": "JalahalliCross(SM Circle)",
+      "lat": 13.040006250000001,
+      "lon": 77.5183112,
+      "covered_severity_min": 24156.7,
+      "headcount": 2
+    }
+  ],
+  "barricades": [
+    {
+      "node_id": 164,
+      "junction": "MSRamaiahHospitalJunc",
+      "lat": 13.0278807,
+      "lon": 77.5742038,
+      "closure_prob": 0.254,
+      "burden_min": 16346.5,
+      "spillover_score": 4150.0
+    },
+    {
+      "node_id": 165,
+      "junction": "MahalaxmiLayoutEntranceJunc",
+      "lat": 13.0108338,
+      "lon": 77.5485942,
+      "closure_prob": 0.3,
+      "burden_min": 11520.0,
+      "spillover_score": 3451.3
+    },
+    {
+      "node_id": 25,
+      "junction": "BM ShriJunc(CMH-100FtRd)Junc",
+      "lat": 12.9783724,
+      "lon": 77.640885,
+      "closure_prob": 0.371,
+      "burden_min": 7200.0,
+      "spillover_score": 2668.6
+    },
+    {
+      "node_id": 86,
+      "junction": "GangammagudiJunc",
+      "lat": 13.0567354,
+      "lon": 77.54666705,
+      "closure_prob": 0.183,
+      "burden_min": 13805.8,
+      "spillover_score": 2524.4
+    },
+    {
+      "node_id": 180,
+      "junction": "ModiBridgeJunction",
+      "lat": 12.9994047,
+      "lon": 77.5499404,
+      "closure_prob": 0.336,
+      "burden_min": 7200.0,
+      "spillover_score": 2417.3
+    },
+    {
+      "node_id": 244,
+      "junction": "ShivajiTalkiesJunc",
+      "lat": 12.9633032,
+      "lon": 77.5819049,
+      "closure_prob": 0.199,
+      "burden_min": 11688.3,
+      "spillover_score": 2327.4
+    },
+    {
+      "node_id": 211,
+      "junction": "PlatformRdJunction",
+      "lat": 12.98173285,
+      "lon": 77.5701809,
+      "closure_prob": 0.172,
+      "burden_min": 10080.0,
+      "spillover_score": 1738.6
+    },
+    {
+      "node_id": 66,
+      "junction": "DMRoadJunc(Basavangudi)",
+      "lat": 12.943615,
+      "lon": 77.5722,
+      "closure_prob": 0.395,
+      "burden_min": 4320.0,
+      "spillover_score": 1707.8
+    }
+  ]
+}

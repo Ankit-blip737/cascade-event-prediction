@@ -1,0 +1,70 @@
+{
+  "de_censoring": {
+    "newly_resolved": 873,
+    "still_active_censored": 234,
+    "aci_alpha_drift": [
+      0.1,
+      0.106
+    ],
+    "recalibrated_coverage": 0.9
+  },
+  "intensity_residual": {
+    "share_rmse": 0.00256,
+    "top_under_predicted": [
+      {
+        "node_id": 152,
+        "actual_share": 0.0235,
+        "pred_share": 0.0141,
+        "residual": 0.0094
+      },
+      {
+        "node_id": 74,
+        "actual_share": 0.0199,
+        "pred_share": 0.0112,
+        "residual": 0.0087
+      },
+      {
+        "node_id": 42,
+        "actual_share": 0.0217,
+        "pred_share": 0.013,
+        "residual": 0.0086
+      },
+      {
+        "node_id": 6,
+        "actual_share": 0.009,
+        "pred_share": 0.002,
+        "residual": 0.007
+      },
+      {
+        "node_id": 192,
+        "actual_share": 0.0117,
+        "pred_share": 0.0052,
+        "residual": 0.0065
+      },
+      {
+        "node_id": 236,
+        "actual_share": 0.0081,
+        "pred_share": 0.0019,
+        "residual": 0.0062
+      },
+      {
+        "node_id": 86,
+        "actual_share": 0.0126,
+        "pred_share": 0.0066,
+        "residual": 0.006
+      },
+      {
+        "node_id": 104,
+        "actual_share": 0.0163,
+        "pred_share": 0.0103,
+        "residual": 0.0059
+      }
+    ]
+  },
+  "off_policy_reward": {
+    "deployed_relieved": 1527.0,
+    "random_relieved": 332.0,
+    "lift_vs_random_pct": 360.4,
+    "n_staffed": 12
+  }
+}

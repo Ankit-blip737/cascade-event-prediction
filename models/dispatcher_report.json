@@ -1,0 +1,10 @@
+{
+  "rewards": {
+    "random": 2319.0,
+    "greedy-nearest": 1026.0,
+    "greedy-severity": 5353.0,
+    "GATE-PPO (learned)": 6442.0
+  },
+  "lift_vs_greedy_pct": 20.3,
+  "best_eval": 6594.0
+}

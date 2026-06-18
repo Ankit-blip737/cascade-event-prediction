@@ -1,0 +1,122 @@
+{
+  "numeric_features": [
+    "latitude",
+    "longitude",
+    "snap_dist_km",
+    "hour_sin",
+    "hour_cos",
+    "dow_sin",
+    "dow_cos",
+    "month_sin",
+    "month_cos",
+    "is_weekend",
+    "is_night",
+    "is_morning_peak",
+    "is_evening_peak",
+    "is_holiday",
+    "event_type_planned",
+    "event_cause_freq",
+    "corridor_freq",
+    "zone_freq",
+    "ripple_node_60",
+    "ripple_node_360",
+    "ripple_node_1440",
+    "ripple_neigh_60",
+    "ripple_neigh_360",
+    "ripple_neigh_1440",
+    "time_since_last_node_min",
+    "node_event_rank",
+    "has_prior_at_node",
+    "node_closure_rate_prior"
+  ],
+  "categorical_features": [
+    "event_cause_code",
+    "corridor_code",
+    "zone_code"
+  ],
+  "targets": [
+    "duration_min",
+    "log_duration_min",
+    "event_observed",
+    "censored",
+    "road_closure",
+    "priority_high"
+  ],
+  "meta_cols": [
+    "id",
+    "node_id",
+    "start_datetime",
+    "split",
+    "snapped"
+  ],
+  "category_mappings": {
+    "event_cause": {
+      "accident": 0,
+      "congestion": 1,
+      "construction": 2,
+      "debris": 3,
+      "fog / low visibility": 4,
+      "others": 5,
+      "pot_holes": 6,
+      "procession": 7,
+      "protest": 8,
+      "public_event": 9,
+      "road_conditions": 10,
+      "test_demo": 11,
+      "tree_fall": 12,
+      "vehicle_breakdown": 13,
+      "vip_movement": 14,
+      "water_logging": 15
+    },
+    "corridor": {
+      "airport new south road": 0,
+      "bannerghata road": 1,
+      "bellary road 1": 2,
+      "bellary road 2": 3,
+      "cbd 1": 4,
+      "cbd 2": 5,
+      "hennur main road": 6,
+      "hosur road": 7,
+      "irr(thanisandra road)": 8,
+      "magadi road": 9,
+      "mysore road": 10,
+      "non-corridor": 11,
+      "old airport road": 12,
+      "old madras road": 13,
+      "orr east 1": 14,
+      "orr east 2": 15,
+      "orr north 1": 16,
+      "orr north 2": 17,
+      "orr west 1": 18,
+      "tumkur road": 19,
+      "unknown": 20,
+      "varthur road": 21,
+      "west of chord road": 22
+    },
+    "zone": {
+      "central zone 1": 0,
+      "central zone 2": 1,
+      "east zone 1": 2,
+      "east zone 2": 3,
+      "north zone 1": 4,
+      "north zone 2": 5,
+      "south zone 1": 6,
+      "south zone 2": 7,
+      "unknown": 8,
+      "west zone 1": 9,
+      "west zone 2": 10
+    }
+  },
+  "ripple_windows_min": [
+    60,
+    360,
+    1440
+  ],
+  "split_counts": {
+    "train": 5676,
+    "val": 1225,
+    "test": 1107,
+    "drop": 165
+  },
+  "n_rows": 8173
+}

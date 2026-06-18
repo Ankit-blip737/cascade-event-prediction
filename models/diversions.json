@@ -1,0 +1,162 @@
+[
+  {
+    "barricade": "MSRamaiahHospitalJunc",
+    "node_id": 164,
+    "from": "HebbalFlyoverJunc",
+    "to": "MekhriCircle",
+    "via": [
+      "HebbalFlyoverJunc",
+      "MekhriCircle"
+    ],
+    "added_km": -1.04,
+    "reroute_km": 3.18,
+    "from_id": 99,
+    "to_id": 175,
+    "via_ids": [
+      99,
+      175
+    ],
+    "router_used": "offline"
+  },
+  {
+    "barricade": "MahalaxmiLayoutEntranceJunc",
+    "node_id": 165,
+    "from": "TumkurRdMarappanapalyaJunc",
+    "to": "YeshwanthpuraCircle",
+    "via": [
+      "TumkurRdMarappanapalyaJunc",
+      "YeshwanthpuraCircle"
+    ],
+    "added_km": -1.83,
+    "reroute_km": 0.41,
+    "from_id": 271,
+    "to_id": 292,
+    "via_ids": [
+      271,
+      292
+    ],
+    "router_used": "offline"
+  },
+  {
+    "barricade": "BM ShriJunc(CMH-100FtRd)Junc",
+    "node_id": 25,
+    "from": "BEML GateJunc(SuranjandasRd)",
+    "to": "DomlurWaterTank",
+    "via": [
+      "BEML GateJunc(SuranjandasRd)",
+      "Indiranasgar13thMainJunc",
+      "DomlurWaterTank"
+    ],
+    "added_km": -1.54,
+    "reroute_km": 2.56,
+    "from_id": 23,
+    "to_id": 78,
+    "via_ids": [
+      23,
+      114,
+      78
+    ],
+    "router_used": "offline"
+  },
+  {
+    "barricade": "GangammagudiJunc",
+    "node_id": 86,
+    "from": "GokuldasImagesJunc",
+    "to": "SRS Peenya Junc",
+    "via": [
+      "GokuldasImagesJunc",
+      "SRS Peenya Junc"
+    ],
+    "added_km": -5.28,
+    "reroute_km": 0.91,
+    "from_id": 90,
+    "to_id": 232,
+    "via_ids": [
+      90,
+      232
+    ],
+    "router_used": "offline"
+  },
+  {
+    "barricade": "ModiBridgeJunction",
+    "node_id": 180,
+    "from": "Dr RajkumarRd-10thCrossRdJunc",
+    "to": "ShankarMuttCircle",
+    "via": [
+      "Dr RajkumarRd-10thCrossRdJunc",
+      "Rajajinagagr1stBlockJunction",
+      "ShankarMuttCircle"
+    ],
+    "added_km": -0.28,
+    "reroute_km": 1.79,
+    "from_id": 79,
+    "to_id": 242,
+    "via_ids": [
+      79,
+      221,
+      242
+    ],
+    "router_used": "offline"
+  },
+  {
+    "barricade": "ShivajiTalkiesJunc",
+    "node_id": 244,
+    "from": "N R SquareJunc",
+    "to": "PurnimaTheaterJunc",
+    "via": [
+      "N R SquareJunc",
+      "PurnimaTheaterJunc"
+    ],
+    "added_km": -0.7,
+    "reroute_km": 0.55,
+    "from_id": 185,
+    "to_id": 217,
+    "via_ids": [
+      185,
+      217
+    ],
+    "router_used": "offline"
+  },
+  {
+    "barricade": "PlatformRdJunction",
+    "node_id": 211,
+    "from": "KarnatakaBhavanJunction",
+    "to": "KrishnaFlourMill",
+    "via": [
+      "KarnatakaBhavanJunction",
+      "RRR(Okalipuram)Junction",
+      "KrishnaFlourMill"
+    ],
+    "added_km": -0.11,
+    "reroute_km": 0.92,
+    "from_id": 141,
+    "to_id": 149,
+    "via_ids": [
+      141,
+      220,
+      149
+    ],
+    "router_used": "offline"
+  },
+  {
+    "barricade": "DMRoadJunc(Basavangudi)",
+    "node_id": 66,
+    "from": "LalbaghWestGate",
+    "to": "South end circle",
+    "via": [
+      "LalbaghWestGate",
+      "HalliThindi",
+      "South end circle"
+    ],
+    "added_km": 0.8,
+    "reroute_km": 2.85,
+    "from_id": 157,
+    "to_id": 255,
+    "via_ids": [
+      157,
+      98,
+      255
+    ],
+    "router_used": "offline"
+  }
+]

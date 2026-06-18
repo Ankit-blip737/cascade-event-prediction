@@ -1,0 +1,36 @@
+{
+  "all_test": {
+    "GNN deep (CASCADE)": {
+      "c_harrell": 0.5917,
+      "c_ipcw": 0.5931,
+      "n": 1107
+    },
+    "XGBoost AFT (baseline)": {
+      "c_harrell": 0.598,
+      "c_ipcw": 0.5992,
+      "n": 1107
+    },
+    "Ensemble 40/60": {
+      "c_harrell": 0.6024,
+      "c_ipcw": 0.6036,
+      "n": 1107
+    }
+  },
+  "verified_label_test": {
+    "GNN deep (CASCADE)": {
+      "c_harrell": 0.6665,
+      "c_ipcw": 0.6677,
+      "n": 460
+    },
+    "XGBoost AFT (baseline)": {
+      "c_harrell": 0.6626,
+      "c_ipcw": 0.6636,
+      "n": 460
+    },
+    "Ensemble 40/60": {
+      "c_harrell": 0.6695,
+      "c_ipcw": 0.6706,
+      "n": 460
+    }
+  }
+}

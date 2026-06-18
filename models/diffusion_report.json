@@ -1,0 +1,6 @@
+{
+  "real_planned": 259,
+  "n_synth": 2000,
+  "real_vs_synth_auc": 0.725,
+  "mean_feature_gap_std": 0.106
+}

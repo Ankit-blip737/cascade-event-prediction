@@ -1,0 +1,29 @@
+{
+  "results": [
+    {
+      "model": "Kaplan-Meier",
+      "c_harrell": null,
+      "c_ipcw": null,
+      "ibs": 0.06297845114431669
+    },
+    {
+      "model": "Cox PH (lifelines)",
+      "c_harrell": 0.5637625324678651,
+      "c_ipcw": 0.5651778635109976,
+      "ibs": 0.05387241023505678
+    },
+    {
+      "model": "XGBoost AFT",
+      "c_harrell": 0.5994669378512549,
+      "c_ipcw": 0.60093454898637,
+      "ibs": 0.054590129330633674
+    },
+    {
+      "model": "XGBoost Cox",
+      "c_harrell": 0.5869780166296947,
+      "c_ipcw": 0.5882932330681137,
+      "ibs": null
+    }
+  ],
+  "n_test": 1107
+}

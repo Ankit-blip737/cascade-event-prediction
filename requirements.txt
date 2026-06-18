@@ -1,0 +1,39 @@
+# core
+# python==3.10
+torch==2.1.0          # match CUDA; e.g. +cu121 wheel for A100/T4
+numpy
+pandas
+scikit-learn
+scipy
+pyarrow               # parquet I/O
+
+# graph
+torch-geometric        # PyG (GCN)
+networkx
+osmnx
+
+# survival
+pycox                  # DeepHit / DeepSurv
+scikit-survival        # concordance, integrated Brier
+lifelines              # CoxPH, Kaplan-Meier baselines
+xgboost                # baseline to beat
+
+# conformal / optimization / twin
+mapie                  # vanilla CP for closure/priority (ACI + survival-CP we implement)
+ortools                # allocator ILP/CP-SAT
+# pyepo                # SPO+ (Tier 1.5; needs Gurobi free academic license)
+# libsumo / traci, sumolib   # SUMO digital twin
+
+# optional — Mappls (MapmyIndia) routing/snap-to-road enrichment (offline fallback if absent)
+requests              # only needed if MAPPLS_KEY is set; diversion.py degrades gracefully without it
+
+# config / tracking / demo
+hydra-core
+omegaconf
+wandb                  # optional
+streamlit
+plotly                 # demo
+pytorch-lightning      # optional training loop
+
+# Tier-1 ONLY (guarded — do NOT install on day 1):
+# mamba-ssm, causal-conv1d   # Linux + CUDA 11.6+; install via prebuilt wheel + --no-build-isolation

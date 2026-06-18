@@ -1,0 +1,459 @@
+{
+  "summary": {
+    "officer_teams": 12,
+    "barricades": 8,
+    "diversions": 8,
+    "officer_coverage_pct": 90.1,
+    "twin_congestion_saved_pct": 51.0,
+    "twin_inr_per_day": 4889198.0,
+    "dispatcher_lift_vs_greedy_pct": 20.3,
+    "offpolicy_lift_vs_random_pct": 360.4
+  },
+  "deploy_officers": [
+    {
+      "node_id": 217,
+      "junction": "PurnimaTheaterJunc",
+      "lat": 12.96045045,
+      "lon": 77.5875364,
+      "covered_severity_min": 68847.3,
+      "headcount": 11
+    },
+    {
+      "node_id": 130,
+      "junction": "KCG HospitalJunction",
+      "lat": 12.99931805,
+      "lon": 77.57141139999999,
+      "covered_severity_min": 67585.7,
+      "headcount": 11
+    },
+    {
+      "node_id": 135,
+      "junction": "Kadubeesanahalli-ORR Junc",
+      "lat": 12.93878497,
+      "lon": 77.697052,
+      "covered_severity_min": 43027.1,
+      "headcount": 7
+    },
+    {
+      "node_id": 3,
+      "junction": "29thMainRdBTM LayoutJunc",
+      "lat": 12.9162395,
+      "lon": 77.6153012,
+      "covered_severity_min": 39236.2,
+      "headcount": 6
+    },
+    {
+      "node_id": 143,
+      "junction": "KensingtonOvalJunc",
+      "lat": 12.9821285,
+      "lon": 77.6236031,
+      "covered_severity_min": 34722.6,
+      "headcount": 5
+    },
+    {
+      "node_id": 22,
+      "junction": "BEL Circle",
+      "lat": 13.0439997,
+      "lon": 77.5564883,
+      "covered_severity_min": 29118.1,
+      "headcount": 5
+    },
+    {
+      "node_id": 5,
+      "junction": "5thMainRPC Layout-Vijayanagar",
+      "lat": 12.9660024,
+      "lon": 77.5353515,
+      "covered_severity_min": 21325.4,
+      "headcount": 3
+    },
+    {
+      "node_id": 134,
+      "junction": "KadirenahalliJunction",
+      "lat": 12.9157951,
+      "lon": 77.56518925,
+      "covered_severity_min": 19928.2,
+      "headcount": 3
+    },
+    {
+      "node_id": 210,
+      "junction": "PeenyaPoliceStation",
+      "lat": 13.0375844,
+      "lon": 77.52220635,
+      "covered_severity_min": 15830.6,
+      "headcount": 2
+    },
+    {
+      "node_id": 283,
+      "junction": "VishweswaraiahJunctio(Uttamsagar)",
+      "lat": 13.01136787,
+      "lon": 77.64639437,
+      "covered_severity_min": 15277.7,
+      "headcount": 2
+    },
+    {
+      "node_id": 279,
+      "junction": "VeerannapalyaJunction(BEL,HO)",
+      "lat": 13.0416234,
+      "lon": 77.6135233,
+      "covered_severity_min": 15174.1,
+      "headcount": 2
+    },
+    {
+      "node_id": 81,
+      "junction": "ESI(k r puram)",
+      "lat": 12.9930024,
+      "lon": 77.7063512,
+      "covered_severity_min": 12740.9,
+      "headcount": 2
+    }
+  ],
+  "barricades": [
+    {
+      "node_id": 164,
+      "junction": "MSRamaiahHospitalJunc",
+      "lat": 13.0278807,
+      "lon": 77.5742038,
+      "closure_prob": 0.254,
+      "burden_min": 8208.7,
+      "spillover_score": 2084.0
+    },
+    {
+      "node_id": 165,
+      "junction": "MahalaxmiLayoutEntranceJunc",
+      "lat": 13.0108338,
+      "lon": 77.5485942,
+      "closure_prob": 0.3,
+      "burden_min": 5776.9,
+      "spillover_score": 1730.7
+    },
+    {
+      "node_id": 25,
+      "junction": "BM ShriJunc(CMH-100FtRd)Junc",
+      "lat": 12.9783724,
+      "lon": 77.640885,
+      "closure_prob": 0.371,
+      "burden_min": 3608.1,
+      "spillover_score": 1337.3
+    },
+    {
+      "node_id": 86,
+      "junction": "GangammagudiJunc",
+      "lat": 13.0567354,
+      "lon": 77.54666705,
+      "closure_prob": 0.183,
+      "burden_min": 6937.2,
+      "spillover_score": 1268.5
+    },
+    {
+      "node_id": 180,
+      "junction": "ModiBridgeJunction",
+      "lat": 12.9994047,
+      "lon": 77.5499404,
+      "closure_prob": 0.336,
+      "burden_min": 3604.4,
+      "spillover_score": 1210.2
+    },
+    {
+      "node_id": 244,
+      "junction": "ShivajiTalkiesJunc",
+      "lat": 12.9633032,
+      "lon": 77.5819049,
+      "closure_prob": 0.199,
+      "burden_min": 5857.5,
+      "spillover_score": 1166.3
+    },
+    {
+      "node_id": 211,
+      "junction": "PlatformRdJunction",
+      "lat": 12.98173285,
+      "lon": 77.5701809,
+      "closure_prob": 0.172,
+      "burden_min": 5054.0,
+      "spillover_score": 871.7
+    },
+    {
+      "node_id": 66,
+      "junction": "DMRoadJunc(Basavangudi)",
+      "lat": 12.943615,
+      "lon": 77.5722,
+      "closure_prob": 0.395,
+      "burden_min": 2164.2,
+      "spillover_score": 855.5
+    }
+  ],
+  "diversions": [
+    {
+      "barricade": "MSRamaiahHospitalJunc",
+      "node_id": 164,
+      "from": "HebbalFlyoverJunc",
+      "to": "MekhriCircle",
+      "via": [
+        "HebbalFlyoverJunc",
+        "MekhriCircle"
+      ],
+      "added_km": -1.04,
+      "reroute_km": 3.18,
+      "from_id": 99,
+      "to_id": 175,
+      "via_ids": [
+        99,
+        175
+      ],
+      "router_used": "offline"
+    },
+    {
+      "barricade": "MahalaxmiLayoutEntranceJunc",
+      "node_id": 165,
+      "from": "TumkurRdMarappanapalyaJunc",
+      "to": "YeshwanthpuraCircle",
+      "via": [
+        "TumkurRdMarappanapalyaJunc",
+        "YeshwanthpuraCircle"
+      ],
+      "added_km": -1.83,
+      "reroute_km": 0.41,
+      "from_id": 271,
+      "to_id": 292,
+      "via_ids": [
+        271,
+        292
+      ],
+      "router_used": "offline"
+    },
+    {
+      "barricade": "BM ShriJunc(CMH-100FtRd)Junc",
+      "node_id": 25,
+      "from": "BEML GateJunc(SuranjandasRd)",
+      "to": "DomlurWaterTank",
+      "via": [
+        "BEML GateJunc(SuranjandasRd)",
+        "Indiranasgar13thMainJunc",
+        "DomlurWaterTank"
+      ],
+      "added_km": -1.54,
+      "reroute_km": 2.56,
+      "from_id": 23,
+      "to_id": 78,
+      "via_ids": [
+        23,
+        114,
+        78
+      ],
+      "router_used": "offline"
+    },
+    {
+      "barricade": "GangammagudiJunc",
+      "node_id": 86,
+      "from": "GokuldasImagesJunc",
+      "to": "SRS Peenya Junc",
+      "via": [
+        "GokuldasImagesJunc",
+        "SRS Peenya Junc"
+      ],
+      "added_km": -5.28,
+      "reroute_km": 0.91,
+      "from_id": 90,
+      "to_id": 232,
+      "via_ids": [
+        90,
+        232
+      ],
+      "router_used": "offline"
+    },
+    {
+      "barricade": "ModiBridgeJunction",
+      "node_id": 180,
+      "from": "Dr RajkumarRd-10thCrossRdJunc",
+      "to": "ShankarMuttCircle",
+      "via": [
+        "Dr RajkumarRd-10thCrossRdJunc",
+        "Rajajinagagr1stBlockJunction",
+        "ShankarMuttCircle"
+      ],
+      "added_km": -0.28,
+      "reroute_km": 1.79,
+      "from_id": 79,
+      "to_id": 242,
+      "via_ids": [
+        79,
+        221,
+        242
+      ],
+      "router_used": "offline"
+    },
+    {
+      "barricade": "ShivajiTalkiesJunc",
+      "node_id": 244,
+      "from": "N R SquareJunc",
+      "to": "PurnimaTheaterJunc",
+      "via": [
+        "N R SquareJunc",
+        "PurnimaTheaterJunc"
+      ],
+      "added_km": -0.7,
+      "reroute_km": 0.55,
+      "from_id": 185,
+      "to_id": 217,
+      "via_ids": [
+        185,
+        217
+      ],
+      "router_used": "offline"
+    },
+    {
+      "barricade": "PlatformRdJunction",
+      "node_id": 211,
+      "from": "KarnatakaBhavanJunction",
+      "to": "KrishnaFlourMill",
+      "via": [
+        "KarnatakaBhavanJunction",
+        "RRR(Okalipuram)Junction",
+        "KrishnaFlourMill"
+      ],
+      "added_km": -0.11,
+      "reroute_km": 0.92,
+      "from_id": 141,
+      "to_id": 149,
+      "via_ids": [
+        141,
+        220,
+        149
+      ],
+      "router_used": "offline"
+    },
+    {
+      "barricade": "DMRoadJunc(Basavangudi)",
+      "node_id": 66,
+      "from": "LalbaghWestGate",
+      "to": "South end circle",
+      "via": [
+        "LalbaghWestGate",
+        "HalliThindi",
+        "South end circle"
+      ],
+      "added_km": 0.8,
+      "reroute_km": 2.85,
+      "from_id": 157,
+      "to_id": 255,
+      "via_ids": [
+        157,
+        98,
+        255
+      ],
+      "router_used": "offline"
+    }
+  ],
+  "impact": {
+    "baseline_veh_min": 2739046.0,
+    "saved_veh_min": 1396914.0,
+    "person_hours_saved": 32595.0,
+    "inr_per_day": 4889198.0
+  },
+  "model_eval": {
+    "all_test": {
+      "GNN deep (CASCADE)": {
+        "c_harrell": 0.5917,
+        "c_ipcw": 0.5931,
+        "n": 1107
+      },
+      "XGBoost AFT (baseline)": {
+        "c_harrell": 0.598,
+        "c_ipcw": 0.5992,
+        "n": 1107
+      },
+      "Ensemble 40/60": {
+        "c_harrell": 0.6024,
+        "c_ipcw": 0.6036,
+        "n": 1107
+      }
+    },
+    "verified_label_test": {
+      "GNN deep (CASCADE)": {
+        "c_harrell": 0.6665,
+        "c_ipcw": 0.6677,
+        "n": 460
+      },
+      "XGBoost AFT (baseline)": {
+        "c_harrell": 0.6626,
+        "c_ipcw": 0.6636,
+        "n": 460
+      },
+      "Ensemble 40/60": {
+        "c_harrell": 0.6695,
+        "c_ipcw": 0.6706,
+        "n": 460
+      }
+    }
+  },
+  "closed_loop": {
+    "de_censoring": {
+      "newly_resolved": 873,
+      "still_active_censored": 234,
+      "aci_alpha_drift": [
+        0.1,
+        0.106
+      ],
+      "recalibrated_coverage": 0.9
+    },
+    "intensity_residual": {
+      "share_rmse": 0.00256,
+      "top_under_predicted": [
+        {
+          "node_id": 152,
+          "actual_share": 0.0235,
+          "pred_share": 0.0141,
+          "residual": 0.0094
+        },
+        {
+          "node_id": 74,
+          "actual_share": 0.0199,
+          "pred_share": 0.0112,
+          "residual": 0.0087
+        },
+        {
+          "node_id": 42,
+          "actual_share": 0.0217,
+          "pred_share": 0.013,
+          "residual": 0.0086
+        },
+        {
+          "node_id": 6,
+          "actual_share": 0.009,
+          "pred_share": 0.002,
+          "residual": 0.007
+        },
+        {
+          "node_id": 192,
+          "actual_share": 0.0117,
+          "pred_share": 0.0052,
+          "residual": 0.0065
+        },
+        {
+          "node_id": 236,
+          "actual_share": 0.0081,
+          "pred_share": 0.0019,
+          "residual": 0.0062
+        },
+        {
+          "node_id": 86,
+          "actual_share": 0.0126,
+          "pred_share": 0.0066,
+          "residual": 0.006
+        },
+        {
+          "node_id": 104,
+          "actual_share": 0.0163,
+          "pred_share": 0.0103,
+          "residual": 0.0059
+        }
+      ]
+    },
+    "off_policy_reward": {
+      "deployed_relieved": 1527.0,
+      "random_relieved": 332.0,
+      "lift_vs_random_pct": 360.4,
+      "n_staffed": 12
+    }
+  },
+  "ops_briefing": "CASCADE - DAILY OPS BRIEFING\n========================================\nDeploy 12 officer teams covering 90.1% of expected congestion-minutes within response range.\n  Priority junctions: PurnimaTheaterJunc (11), KCG HospitalJunction (11), Kadubeesanahalli-ORR Junc (7).\nBarricade 8 closure-prone junctions; 8 diversions prepared.\n  Top barricades: MSRamaiahHospitalJunc, MahalaxmiLayoutEntranceJunc, BM ShriJunc(CMH-100FtRd)Junc.\nProjected impact: ~51.0% congestion avoided (~Rs 4,889,198/day) [illustrative twin].\nRL dispatcher relieves 20.3% more congestion than greedy.\nOn realized outcomes the plan beats random placement by 360.4%."
+}

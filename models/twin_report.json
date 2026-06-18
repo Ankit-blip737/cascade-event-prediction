@@ -1,0 +1,104 @@
+{
+  "engine": "analytical (deterministic queue)",
+  "assumptions": {
+    "lane_cap_vph": 1800.0,
+    "n_lanes": 2,
+    "residual_frac": 0.4,
+    "occupancy": 1.4,
+    "clear_cap_min": 180.0,
+    "response_gain": 0.3,
+    "vot_inr_hr": 150.0
+  },
+  "totals": {
+    "baseline_veh_min": 2739046.0,
+    "saved_veh_min": 1396914.0,
+    "person_hours_saved": 32595.0,
+    "inr_per_day": 4889198.0
+  },
+  "per_junction": [
+    {
+      "junction": "KensingtonOvalJunc",
+      "node_id": 143,
+      "baseline_clear_min": 180.0,
+      "intervention_clear_min": 126.0,
+      "veh_min_saved": 152087.0
+    },
+    {
+      "junction": "VishweswaraiahJunctio(Uttamsagar)",
+      "node_id": 283,
+      "baseline_clear_min": 180.0,
+      "intervention_clear_min": 126.0,
+      "veh_min_saved": 152087.0
+    },
+    {
+      "junction": "29thMainRdBTM LayoutJunc",
+      "node_id": 3,
+      "baseline_clear_min": 170.0,
+      "intervention_clear_min": 119.0,
+      "veh_min_saved": 148093.0
+    },
+    {
+      "junction": "VeerannapalyaJunction(BEL,HO)",
+      "node_id": 279,
+      "baseline_clear_min": 128.8,
+      "intervention_clear_min": 90.2,
+      "veh_min_saved": 142565.0
+    },
+    {
+      "junction": "BEL Circle",
+      "node_id": 22,
+      "baseline_clear_min": 129.1,
+      "intervention_clear_min": 90.4,
+      "veh_min_saved": 129433.0
+    },
+    {
+      "junction": "ESI(k r puram)",
+      "node_id": 81,
+      "baseline_clear_min": 157.9,
+      "intervention_clear_min": 110.5,
+      "veh_min_saved": 117008.0
+    },
+    {
+      "junction": "KCG HospitalJunction",
+      "node_id": 130,
+      "baseline_clear_min": 146.9,
+      "intervention_clear_min": 102.8,
+      "veh_min_saved": 103528.0
+    },
+    {
+      "junction": "Kadubeesanahalli-ORR Junc",
+      "node_id": 135,
+      "baseline_clear_min": 128.2,
+      "intervention_clear_min": 89.8,
+      "veh_min_saved": 97859.0
+    },
+    {
+      "junction": "PeenyaPoliceStation",
+      "node_id": 210,
+      "baseline_clear_min": 127.2,
+      "intervention_clear_min": 89.1,
+      "veh_min_saved": 96362.0
+    },
+    {
+      "junction": "KadirenahalliJunction",
+      "node_id": 134,
+      "baseline_clear_min": 128.2,
+      "intervention_clear_min": 89.7,
+      "veh_min_saved": 89863.0
+    },
+    {
+      "junction": "PurnimaTheaterJunc",
+      "node_id": 217,
+      "baseline_clear_min": 126.5,
+      "intervention_clear_min": 88.6,
+      "veh_min_saved": 87571.0
+    },
+    {
+      "junction": "5thMainRPC Layout-Vijayanagar",
+      "node_id": 5,
+      "baseline_clear_min": 128.0,
+      "intervention_clear_min": 89.6,
+      "veh_min_saved": 80457.0
+    }
+  ]
+}

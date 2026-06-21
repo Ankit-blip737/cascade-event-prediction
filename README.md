@@ -1,3 +1,12 @@
+---
+title: Cascade Dashboard
+emoji: 🚦
+colorFrom: indigo
+colorTo: blue
+sdk: docker
+pinned: false
+---
+
 # 🚦 CASCADE — Bengaluru Traffic Intelligence
 
 **Event-driven congestion forecasting & resource dispatch for the Bengaluru Traffic Police.**

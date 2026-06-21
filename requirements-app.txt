@@ -1,0 +1,12 @@
+# Lightweight deps for the CASCADE dashboard (Streamlit Cloud / HF Spaces / Docker).
+# The dashboard only reads precomputed artifacts + runs the OR-Tools allocator for what-if;
+# it does NOT need torch / torch-geometric / pycox / xgboost (those are for offline training).
+streamlit>=1.36
+pydeck>=0.9
+plotly>=5.20     # survival curve, Hawkes gauges, MARL & economic charts
+scipy>=1.11      # lognormal clearance curve in the survival visualizer
+pandas>=2.0
+numpy>=1.26
+pyarrow>=14
+ortools>=9.7
+requests        # optional — only used if MAPPLS_KEY is set (graceful fallback otherwise)

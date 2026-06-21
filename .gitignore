@@ -34,3 +34,8 @@ HANDOFF.md
 
 # Misc
 *.log
+
+# runtime temp artifacts
+models/_*.json
+models/_*.log
+*.log

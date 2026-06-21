@@ -460,7 +460,7 @@ def fig_econ(twin):
     return fig
 
 
-PLOT = dict(use_container_width=True, theme=None, config={"displayModeBar": False})
+PLOT = dict(width="stretch", theme=None, config={"displayModeBar": False})
 
 
 # ============================================================ live auto-simulation widget (client-side)
@@ -711,7 +711,7 @@ with tab_model:
         vt = ev.get("verified_label_test", {})
         rows = [{"Model": m, "C-index": d.get("c_harrell")} for m, d in vt.items()]
         if rows:
-            st.dataframe(pd.DataFrame(rows), hide_index=True, use_container_width=True,
+            st.dataframe(pd.DataFrame(rows), hide_index=True, width="stretch",
                          column_config={"C-index": st.column_config.NumberColumn(format="%.3f")})
 
 # ===== ECONOMIC IMPACT =====
@@ -741,7 +741,7 @@ with tab_work:
         b = opt2.slider("Barricades", 2, 16, 8)
         r = opt3.slider("Radius (km)", 1.0, 6.0, 3.0, 0.5)
         pw = opt4.slider("Predictive wt", 0.0, 1.0, 0.5, 0.1)
-        reopt = opt5.button("Re-optimize", use_container_width=True, type="primary")
+        reopt = opt5.button("Re-optimize", width="stretch", type="primary")
     if reopt:
         try:
             with st.spinner("Solving allocation (OR-Tools CP-SAT)…"):
@@ -756,7 +756,7 @@ with tab_work:
     if not odf.empty:
         odf = odf[["junction", "headcount", "covered_severity_min"]].copy()
         odf.columns = ["Junction", "Officers", "Covered severity-min"]
-        st.dataframe(odf, hide_index=True, use_container_width=True, height=240, column_config={
+        st.dataframe(odf, hide_index=True, width="stretch", height=240, column_config={
             "Officers": st.column_config.NumberColumn(format="%d"),
             "Covered severity-min": st.column_config.NumberColumn(format="%.0f")})
     vspace(20)
@@ -765,7 +765,7 @@ with tab_work:
     if not bdf.empty:
         bdf = bdf[["junction", "closure_prob", "burden_min"]].copy()
         bdf.columns = ["Junction", "P(closure)", "Burden (min)"]
-        st.dataframe(bdf, hide_index=True, use_container_width=True, height=220, column_config={
+        st.dataframe(bdf, hide_index=True, width="stretch", height=220, column_config={
             "P(closure)": st.column_config.ProgressColumn(format="%.0f%%", min_value=0, max_value=1),
             "Burden (min)": st.column_config.NumberColumn(format="%.0f")})
     vspace(20)
@@ -775,7 +775,7 @@ with tab_work:
         keep = [c for c in ["barricade", "from", "to", "added_km", "reroute_km"] if c in ddf.columns]
         ddf = ddf[keep].copy()
         ddf.columns = ["Closed junction", "Reroute from", "Reroute to", "Added km", "Reroute km"][:len(keep)]
-        st.dataframe(ddf, hide_index=True, use_container_width=True, height=220, column_config={
+        st.dataframe(ddf, hide_index=True, width="stretch", height=220, column_config={
             "Added km": st.column_config.NumberColumn(format="%.2f km"),
             "Reroute km": st.column_config.NumberColumn(format="%.2f km")})
 
@@ -796,7 +796,7 @@ with tab_work:
                 unsafe_allow_html=True)
 
     vspace(30)
-    if st.button("Transmit Orders to Field Units", use_container_width=True, type="primary"):
+    if st.button("Transmit Orders to Field Units", width="stretch", type="primary"):
         st.toast("Orders transmitted securely to all field units.")
         st.success("Secure channel · Deployment orders acknowledged by field units.")
     vspace(10)

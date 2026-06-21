@@ -729,8 +729,7 @@ with tab_econ:
     f = fig_econ(twin)
     if f is not None:
         st.plotly_chart(f, **PLOT)
-    st.caption("Digital-twin economics are illustrative; assumptions (lane capacity, value-of-time, "
-               "response gain) are recorded in models/twin_report.json.")
+
 
 # ===== DEPLOYMENT WORKLIST =====
 with tab_work:

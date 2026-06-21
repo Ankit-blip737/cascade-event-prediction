@@ -32,7 +32,6 @@ CLEAR_CAP = 180.0
 st.set_page_config(page_title="CASCADE · Traffic Intelligence Command Center", page_icon="C",
                    layout="wide", initial_sidebar_state="collapsed")
 
-# ============================================================ design tokens
 # Pinot Noir — Custom Solid Variations
 BG = "#152038"
 # Hero & Callout: Warm Copper-Slate
@@ -69,7 +68,6 @@ def heat_rgb(n):
     return list(HEAT[-1][1])
 
 
-# ============================================================ CSS
 st.markdown(f"""
 <style>
   @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap');
@@ -191,7 +189,6 @@ st.markdown(f"""
 """, unsafe_allow_html=True)
 
 
-# ============================================================ icons (SVG, no emoji)
 def _svg(inner, sz=18):
     return (f'<svg width="{sz}" height="{sz}" viewBox="0 0 24 24" fill="none" stroke="currentColor" '
             f'stroke-width="2" stroke-linecap="round" stroke-linejoin="round">{inner}</svg>')
@@ -220,7 +217,6 @@ def play(height, **kw):
     return base
 
 
-# ============================================================ data loaders (unchanged logic)
 @st.cache_data(show_spinner=False)
 def load_nodes():
     nd = pd.read_parquet(PROC / "graph_nodes.parquet")
@@ -305,7 +301,6 @@ def diurnal_display(risk_df, hour):
     return d, float(base)
 
 
-# ============================================================ map layers
 def risk_layer(risk_df, mode):
     col = mode
     d = risk_df.copy()
@@ -359,7 +354,6 @@ def diversion_layer(divs, nodes):
                      width_min_pixels=3, get_width=4, pickable=True)
 
 
-# ============================================================ presentation helpers
 def section(title):
     st.markdown(f'<div class="sec"><span class="bar"></span><span class="t">{title}</span>'
                 f'<span class="hr"></span></div>', unsafe_allow_html=True)
@@ -385,7 +379,6 @@ def mini(label, val, accent=TXT):
             f'<div class="mv" style="color:{accent}">{val}</div></div>')
 
 
-# ============================================================ plotly charts
 def clearance_curve(p50, p90):
     p50 = max(float(p50), 1.0); p90 = max(float(p90), p50 * 1.05)
     mu = np.log(p50); sigma = max(np.log(p90 / p50) / 1.2816, 0.05)
@@ -463,7 +456,6 @@ def fig_econ(twin):
 PLOT = dict(width="stretch", theme=None, config={"displayModeBar": False})
 
 
-# ============================================================ live auto-simulation widget (client-side)
 def live_pulse(height=232):
     components.html("""
 <div style="font-family:Inter,system-ui,sans-serif;border:1px solid #283a62;border-radius:14px;
@@ -519,7 +511,6 @@ def live_pulse(height=232):
 """, height=height)
 
 
-# ============================================================ load artifacts
 rec = load_json("recommendation.json", {})
 twin = load_json("twin_report.json", {})
 disp = load_json("dispatcher_report.json", {})
@@ -531,7 +522,6 @@ fc = node_forecast()
 cal = load_calibrated()
 n_events = int(len(cal["durations"]))
 
-# ============================================================ top bar
 st.markdown(
     f'<div class="topbar"><div class="mark">{IC["logo"]}</div>'
     '<div><div class="wm">CASCADE</div>'
@@ -543,7 +533,6 @@ st.markdown(
     f'<div class="chip live"><div class="cl">Status</div><div class="cv"><span class="pulse"></span>LIVE</div></div>'
     f'</div></div>', unsafe_allow_html=True)
 
-# ============================================================ controls (integrated into main layout)
 # --- Junction selector ---
 jname = nodes["junction"].tolist()[int(nodes["n_events"].idxmax())]
 # Will be placed per-section below
@@ -554,11 +543,9 @@ if "plan" not in st.session_state:
 plan = st.session_state.plan
 divs = load_json("diversions.json", [])
 
-# ============================================================ tabs
 tab_cmd, tab_model, tab_econ, tab_work = st.tabs(
     ["Command Center", "Model Transparency", "Economic Impact", "Deployment Worklist"])
 
-# ===== COMMAND CENTER =====
 with tab_cmd:
     section("Predictive Insights")
     k = st.columns(5)
@@ -587,7 +574,6 @@ with tab_cmd:
 
     vspace(22)
 
-    # ── Map (left) + Controls (right) ──
     map_col, ctrl_col = st.columns([2.5, 1])
 
     with ctrl_col:
@@ -643,7 +629,6 @@ with tab_cmd:
         vspace(14)
         live_pulse()
 
-    # ── Junction Intelligence (full-width below map) ──
     vspace(16)
     section(f"Junction Intelligence · {jname}")
     if nid in fc.index:
@@ -684,7 +669,6 @@ with tab_cmd:
         </div>
         ''', unsafe_allow_html=True)
 
-# ===== MODEL TRANSPARENCY =====
 with tab_model:
     section(f"DeepHit Survival · {jname}")
     if nid in fc.index:
@@ -714,7 +698,6 @@ with tab_model:
             st.dataframe(pd.DataFrame(rows), hide_index=True, width="stretch",
                          column_config={"C-index": st.column_config.NumberColumn(format="%.3f")})
 
-# ===== ECONOMIC IMPACT =====
 with tab_econ:
     section("Return on Investment")
     tot = (twin or {}).get("totals", {})
@@ -731,9 +714,7 @@ with tab_econ:
         st.plotly_chart(f, **PLOT)
 
 
-# ===== DEPLOYMENT WORKLIST =====
 with tab_work:
-    # ── What-if Optimizer (moved from sidebar) ──
     with st.expander("⚙️ What-if Deployment Optimizer", expanded=False):
         opt1, opt2, opt3, opt4, opt5 = st.columns([1, 1, 1, 1, 1.2])
         o = opt1.slider("Officer teams", 4, 24, 12)

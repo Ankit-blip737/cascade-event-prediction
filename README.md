@@ -85,22 +85,21 @@ RAW ASTRAM CSV
 
 ## 🔁 Reproduce from the raw data
 ```bash
-pip install -r requirements.txt        # full (training) deps
-python -m src.cascade.data.ingest   --input data/raw/astram_events.csv --output data/processed/events_clean.parquet
+pip install -r requirements.txt
+python -m src.cascade.data.ingest --input data/raw/astram_events.csv --output data/processed/events_clean.parquet
 python -m src.cascade.data.graph
 python -m src.cascade.data.features
-python -m src.cascade.data.dataset                       # -> train_bundle.npz (upload to Colab)
-python -m src.cascade.eval.baselines                     # XGBoost baseline
-#   Colab (GPU): run notebooks/02_hawkes_mmoe.ipynb -> download trunk_mtl.pt + preds_mtl.npz to models/
+python -m src.cascade.data.dataset
+python -m src.cascade.eval.baselines
 python -m src.cascade.eval.final_eval
 python -m src.cascade.calibrate.conformal_survival --preds models/preds_mtl.npz --out models/calibrated.npz
 python -m src.cascade.optimize.allocator --scope test --predict-weight 0.5
 python -m src.cascade.optimize.diversion
 python -m src.cascade.twin.sumo_runner
-python -m src.cascade.rl.gate_ppo --updates 100          # trains locally on CPU
+python -m src.cascade.rl.gate_ppo --updates 100
 python -m src.cascade.diffusion.ddpm
 python -m src.cascade.closed_loop
-python -m src.cascade.serve.recommend                    # -> models/recommendation.json (UI reads this)
+python -m src.cascade.serve.recommend
 ```
 
 ## 📁 Repo layout
@@ -120,7 +119,7 @@ src/cascade/
 notebooks/   01 trunk+DeepHit · 02 Hawkes+MMoE+PCGrad · 03 SPO+   (Colab GPU)
 models/      trained weights + all computed JSON/npz artifacts
 data/        raw + processed
-HANDOFF.md   detailed build/handoff notes
+
 ```
 
 Built only on the provided ASTRAM dataset. Mappls/MapmyIndia is used as an allowed *service* (maps /

@@ -15,8 +15,8 @@ COPY data/processed/ ./data/processed/
 COPY models/ ./models/
 COPY .streamlit/ ./.streamlit/
 
-EXPOSE 8501
-HEALTHCHECK CMD curl -fsS http://localhost:8501/_stcore/health || exit 1
+EXPOSE 7860
+HEALTHCHECK CMD curl -fsS http://localhost:7860/_stcore/health || exit 1
 
-# $PORT is set by most PaaS; default to 8501 locally
-CMD streamlit run src/cascade/demo/app.py --server.port ${PORT:-8501} --server.address 0.0.0.0 --server.headless true
+# $PORT is set by most PaaS; default to 7860 for Hugging Face Spaces
+CMD streamlit run src/cascade/demo/app.py --server.port ${PORT:-7860} --server.address 0.0.0.0 --server.headless true

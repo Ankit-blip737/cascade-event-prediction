@@ -473,27 +473,27 @@ PLOT = dict(use_container_width=True, theme=None, config={"displayModeBar": Fals
 
 def live_pulse(height=232):
     components.html("""
-<div style="font-family:Inter,system-ui,sans-serif;border:1px solid #283a62;border-radius:14px;
-     background:#192542;padding:14px 16px 12px;">
+<div style="font-family:Inter,system-ui,sans-serif;border:1px solid rgba(255, 255, 255, 0.08);border-radius:14px;
+     background:rgba(26, 29, 46, 0.6);padding:14px 16px 12px;">
   <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:12px;">
     <div style="font-size:10.5px;font-weight:800;letter-spacing:1.5px;color:#cbd5e1;text-transform:uppercase;">
       Live Network Pulse · 24h demand simulation</div>
-    <div id="clk" style="font-size:12px;font-weight:800;color:#d4956b;"></div>
+    <div id="clk" style="font-size:12px;font-weight:800;color:#f09853;"></div>
   </div>
   <div style="display:flex;gap:12px;margin-bottom:12px;">
-    <div style="flex:1;background:#1d273d;border:1px solid #283a62;border-radius:11px;padding:10px 12px;">
+    <div style="flex:1;background:rgba(24, 27, 42, 0.6);border:1px solid rgba(255, 255, 255, 0.08);border-radius:11px;padding:10px 12px;">
       <div style="font-size:9px;letter-spacing:1px;color:#64748b;text-transform:uppercase;font-weight:700;">Active incidents</div>
-      <div id="s1" style="font-size:19px;font-weight:800;color:#e8eff5;margin-top:3px;">—</div></div>
-    <div style="flex:1;background:#1d273d;border:1px solid #283a62;border-radius:11px;padding:10px 12px;">
+      <div id="s1" style="font-size:19px;font-weight:800;color:#ffffff;margin-top:3px;">—</div></div>
+    <div style="flex:1;background:rgba(24, 27, 42, 0.6);border:1px solid rgba(255, 255, 255, 0.08);border-radius:11px;padding:10px 12px;">
       <div style="font-size:9px;letter-spacing:1px;color:#64748b;text-transform:uppercase;font-weight:700;">Units engaged</div>
-      <div id="s2" style="font-size:19px;font-weight:800;color:#4cc9f0;margin-top:3px;">—</div></div>
-    <div style="flex:1;background:#1d273d;border:1px solid #283a62;border-radius:11px;padding:10px 12px;">
+      <div id="s2" style="font-size:19px;font-weight:800;color:#58a6ff;margin-top:3px;">—</div></div>
+    <div style="flex:1;background:rgba(24, 27, 42, 0.6);border:1px solid rgba(255, 255, 255, 0.08);border-radius:11px;padding:10px 12px;">
       <div style="font-size:9px;letter-spacing:1px;color:#64748b;text-transform:uppercase;font-weight:700;">Avg clearance</div>
-      <div id="s3" style="font-size:19px;font-weight:800;color:#6bcb9b;margin-top:3px;">—</div></div>
+      <div id="s3" style="font-size:19px;font-weight:800;color:#26e289;margin-top:3px;">—</div></div>
   </div>
   <canvas id="pz" style="width:100%;height:56px;display:block;"></canvas>
   <div style="margin-top:11px;display:flex;align-items:center;gap:9px;font-size:11.5px;color:#8aa4b8;">
-    <span style="flex:none;width:7px;height:7px;border-radius:50%;background:#6bcb9b;box-shadow:0 0 8px #6bcb9b;"></span>
+    <span style="flex:none;width:7px;height:7px;border-radius:50%;background:#26e289;box-shadow:0 0 8px #26e289;"></span>
     <span id="tk"></span></div>
 </div>
 <script>
@@ -507,11 +507,11 @@ def live_pulse(height=232):
   function frame(now){
     const W=c.clientWidth,H=56,dpr=window.devicePixelRatio||1;c.width=W*dpr;c.height=H*dpr;x.setTransform(dpr,0,0,dpr,0,0);x.clearRect(0,0,W,H);
     const prog=((now-t0)/16000)%1,hour=prog*24,L=load(hour);const yy=h=>H-7-load(h)*(H-15);
-    let g=x.createLinearGradient(0,0,0,H);g.addColorStop(0,'rgba(212,149,107,.40)');g.addColorStop(1,'rgba(76,201,240,.04)');
+    let g=x.createLinearGradient(0,0,0,H);g.addColorStop(0,'rgba(240,152,83,.40)');g.addColorStop(1,'rgba(88,166,255,.04)');
     x.beginPath();x.moveTo(0,H);for(let i=0;i<=W;i++)x.lineTo(i,yy(i/W*24));x.lineTo(W,H);x.closePath();x.fillStyle=g;x.fill();
-    x.beginPath();for(let i=0;i<=W;i++){const y=yy(i/W*24);i?x.lineTo(i,y):x.moveTo(i,y);}x.strokeStyle='#d4956b';x.lineWidth=2;x.stroke();
-    const px=prog*W,py=yy(hour);x.strokeStyle='rgba(199,125,219,.5)';x.beginPath();x.moveTo(px,0);x.lineTo(px,H);x.stroke();
-    x.fillStyle='rgba(199,125,219,.22)';x.beginPath();x.arc(px,py,8,0,7);x.fill();x.fillStyle='#c77ddb';x.beginPath();x.arc(px,py,4,0,7);x.fill();
+    x.beginPath();for(let i=0;i<=W;i++){const y=yy(i/W*24);i?x.lineTo(i,y):x.moveTo(i,y);}x.strokeStyle='#f09853';x.lineWidth=2;x.stroke();
+    const px=prog*W,py=yy(hour);x.strokeStyle='rgba(240,152,83,.5)';x.beginPath();x.moveTo(px,0);x.lineTo(px,H);x.stroke();
+    x.fillStyle='rgba(240,152,83,.22)';x.beginPath();x.arc(px,py,8,0,7);x.fill();x.fillStyle='#f09853';x.beginPath();x.arc(px,py,4,0,7);x.fill();
     const mm=Math.floor((hour%1)*60);
     clk.textContent=('0'+Math.floor(hour)).slice(-2)+':'+('0'+mm).slice(-2)+' IST · LOAD '+Math.round(L*100)+'%';
     s1.textContent=Math.round(6+L*46);s2.textContent=Math.round(40+L*22);s3.textContent=Math.round(70+L*95)+' min';

@@ -187,7 +187,7 @@ st.markdown(f"""
                                backdrop-filter: blur(16px); -webkit-backdrop-filter: blur(16px); transition:all 0.2s; box-shadow: 0 4px 12px rgba(80,70,160,0.1);}}
   .stTabs [aria-selected="true"]{{background:rgba(255, 255, 255, 0.8) !important;color:#6b52e3 !important;
     border:1px solid rgba(255, 255, 255, 0.9) !important;box-shadow:0 0 20px rgba(255,255,255,.5);}}
-  .stTabs [data-baseweb="tab-highlight"], .stTabs [data-baseweb="tab-border"]{{display:none !important;}}}
+  .stTabs [data-baseweb="tab-highlight"], .stTabs [data-baseweb="tab-border"]{{display:none !important;}}
 
   /* ══ JI PANEL ══ */
   .ji-panel{{display:flex;align-items:center;justify-content:space-between;

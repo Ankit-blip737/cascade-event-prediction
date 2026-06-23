@@ -94,10 +94,10 @@ st.markdown(f"""
       content: "";
       position: fixed;
       top: 0; left: 0; right: 0; bottom: 0;
-      background: radial-gradient(circle at 10% 20%, rgba(138, 117, 245, 0.08), transparent 45%),
-                  radial-gradient(circle at 90% 70%, rgba(138, 117, 245, 0.06), transparent 45%),
-                  radial-gradient(circle at 80% 10%, rgba(138, 117, 245, 0.04), transparent 35%);
-      background-color: #121216;
+      background: radial-gradient(90% 90% at 10% 0%, rgba(229, 141, 87, 0.08), transparent),
+                  radial-gradient(90% 90% at 90% 10%, rgba(138, 117, 245, 0.08), transparent),
+                  radial-gradient(100% 100% at 50% 100%, rgba(138, 117, 245, 0.05), transparent);
+      background-color: #181820;
       z-index: -1;
       pointer-events: none;
   }}
@@ -184,8 +184,8 @@ st.markdown(f"""
   .stTabs [data-baseweb="tab"]{{height:42px;border-radius:20px;font-size:13px;font-weight:700;color:{MUT};padding:0 24px;
                                background:rgba(25, 25, 35, 0.5); border:1px solid rgba(255, 255, 255, 0.08);
                                backdrop-filter: blur(16px); -webkit-backdrop-filter: blur(16px); transition:all 0.2s; box-shadow: 0 4px 12px rgba(0,0,0,0.4);}}
-  .stTabs [aria-selected="true"]{{background:rgba(40, 40, 50, 0.8) !important;color:#8a75f5 !important;
-    border:1px solid rgba(138, 117, 245, 0.6) !important;box-shadow:0 0 20px rgba(138, 117, 245,.2);}}
+  .stTabs [aria-selected="true"]{{background:rgba(42, 34, 33, 0.8) !important;color:#e58d57 !important;
+    border:1px solid rgba(229, 141, 87, 0.6) !important;box-shadow:0 0 20px rgba(229, 141, 87, .2);}}
   .stTabs [data-baseweb="tab-highlight"], .stTabs [data-baseweb="tab-border"]{{display:none !important;}}
 
   /* ══ JI PANEL ══ */

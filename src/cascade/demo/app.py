@@ -122,7 +122,7 @@ st.markdown(f"""
   /* ══ KPI CARDS ══ */
   .icard{{position:relative;overflow:hidden;border:1px solid rgba(255,255,255,0.05);border-radius:12px;padding:18px; background:rgba(30, 28, 40, 0.6); box-shadow: 0 4px 12px rgba(0,0,0,0.3), 0 0 15px var(--glow); transition:transform .16s, border-color .25s, box-shadow .25s;}}
   .icard:hover{{transform:translateY(-3px);border-color:var(--ac); box-shadow:0 12px 24px rgba(0,0,0,0.5), 0 0 25px var(--glow);}}
-  .icard::before{{display:none;}}
+  .icard::before{{content:"";position:absolute;left:0;top:0;height:3px;width:100%;background:var(--ac);opacity:1;}}
   .icard::after{{content:"";position:absolute;top:-60px;right:-40px;width:140px;height:140px;background:radial-gradient(circle, var(--glow) 0%, transparent 60%);opacity:0.25;pointer-events:none;}}
   .icard .chip2{{width:34px;height:34px;border-radius:8px;display:flex;align-items:center;justify-content:center;margin-bottom:12px;}}
   .icard .v{{font-size:29px;font-weight:900;letter-spacing:-1px;line-height:1;color:{TXT};}}

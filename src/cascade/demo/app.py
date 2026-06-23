@@ -103,19 +103,21 @@ st.markdown(f"""
   }}
 
   /* ══ HERO ══ */
-  .topbar{{display:flex;align-items:center;gap:14px;padding:15px 22px;margin-bottom:24px; background:{HERO_BG}; border:1px solid rgba(255,255,255,0.1); border-top: 1px solid rgba(255,255,255,0.2); box-shadow: 0 8px 32px rgba(0,0,0,0.5), 0 0 30px rgba(138, 117, 245, 0.15);}}
-  .topbar .mark{{width:42px;height:42px;border-radius:12px;display:flex;align-items:center;justify-content:center;
-    background:{HERO_LINE};color:{TXT};}}
-  .topbar .wm{{font-size:22px;font-weight:900;letter-spacing:.5px;color:{TXT};}}
-  .topbar .tg{{font-size:12px;color:{MUT};margin-top:1px;}}
-  .chips{{margin-left:auto;display:flex;gap:10px;}}
-  .chip{{text-align:center;padding:7px 16px;border:1px solid {HERO_LINE};border-radius:8px;background:{PANEL2};}}
-  .chip .cl{{font-size:9px;font-weight:700;letter-spacing:1px;color:{MUT2};text-transform:uppercase;}}
-  .chip .cv{{font-size:16px;font-weight:800;color:{TXT};margin-top:2px;}}
-  .chip.live{{border-color:rgba(88,216,160,.4);}}
-  .chip.live .cv{{color:{EMERALD};display:flex;align-items:center;gap:6px;justify-content:center;}}
-  .pulse{{width:8px;height:8px;border-radius:50%;background:{EMERALD};animation:pulse 1.8s infinite;}}
-  @keyframes pulse{{0%{{box-shadow:0 0 0 0 rgba(88,216,160,.6);}}70%{{box-shadow:0 0 0 8px rgba(88,216,160,0);}}100%{{box-shadow:0 0 0 0 rgba(88,216,160,0);}}}}
+  .topbar{{display:flex;align-items:center;gap:16px;padding:12px 24px;margin-bottom:24px; background:rgba(38, 36, 48, 0.5); border:1px solid rgba(255,255,255,0.05); border-radius:16px; box-shadow: 0 8px 30px rgba(0,0,0,0.5), inset 0 0 20px rgba(229,141,87,0.03);}}
+  .topbar .mark{{width:48px;height:48px;border-radius:14px;display:flex;align-items:center;justify-content:center;
+    background:linear-gradient(135deg, #f09853, #e57e3f);color:#ffffff;font-size:24px; box-shadow: 0 0 20px rgba(229, 141, 87, 0.4), inset 0 2px 5px rgba(255,255,255,0.3);}}
+  .topbar .wm{{font-size:22px;font-weight:800;letter-spacing:-0.5px;color:#ffffff;line-height:1.1;}}
+  .topbar .tg{{font-size:11px;color:#a1a0ab;margin-top:4px; display:flex; align-items:center; gap:6px;}}
+  .topbar .tg::before {{ content:""; display:inline-block; width:6px; height:6px; border-radius:50%; background:#26e289; box-shadow: 0 0 8px rgba(38,226,137,0.6); }}
+  .chips{{margin-left:auto;display:flex;gap:12px;}}
+  .chip{{text-align:right;padding:10px 20px;border:1px solid rgba(255,255,255,0.05);border-radius:14px;background:rgba(30, 28, 40, 0.6); display:flex; flex-direction:column; justify-content:center;}}
+  .chip .cl{{font-size:8px;font-weight:800;letter-spacing:1px;color:#8e8d9a;text-transform:uppercase;margin-bottom:2px;}}
+  .chip .cv{{font-size:18px;font-weight:800;color:#ffffff;line-height:1;}}
+  .chip.live{{border-color:rgba(229, 141, 87, 0.4); background:rgba(229, 141, 87, 0.1); box-shadow: 0 0 15px rgba(229, 141, 87, 0.1);}}
+  .chip.live .cv{{color:#e58d57;display:flex;align-items:center;gap:6px;justify-content:flex-end; text-shadow: 0 0 10px rgba(229, 141, 87, 0.3);}}
+  .chip.live .cl{{color:rgba(229, 141, 87, 0.8);}}
+  .pulse{{width:8px;height:8px;border-radius:50%;background:#e58d57;animation:pulse 1.8s infinite;}}
+  @keyframes pulse{{0%{{box-shadow:0 0 0 0 rgba(229,141,87,.6);}}70%{{box-shadow:0 0 0 8px rgba(229,141,87,0);}}100%{{box-shadow:0 0 0 0 rgba(229,141,87,0);}}}}70%{{box-shadow:0 0 0 8px rgba(88,216,160,0);}}100%{{box-shadow:0 0 0 0 rgba(88,216,160,0);}}}}
 
   /* ══ KPI CARDS ══ */
   .icard{{position:relative;overflow:hidden;border:1px solid {HERO_LINE};border-radius:12px;padding:18px; background:{HERO_BG}; box-shadow: 0 8px 24px rgba(0,0,0,0.4), inset 0 15px 30px -15px var(--glow); transition:transform .16s, border-color .25s, box-shadow .25s;}}

@@ -177,11 +177,12 @@ st.markdown(f"""
 
   /* ══ TABS ══ */
   .stTabs [data-baseweb="tab-list"]{{gap:12px;background:transparent;padding:0;border:none;align-items:center;}}
-  .stTabs [data-baseweb="tab"]{{height:42px;border-radius:20px;font-size:13px;font-weight:700;color:{MUT};padding:0 24px;
-                               background:rgba(25, 25, 35, 0.5); border:1px solid rgba(255, 255, 255, 0.08);
-                               backdrop-filter: blur(16px); -webkit-backdrop-filter: blur(16px); transition:all 0.2s; box-shadow: 0 4px 12px rgba(0,0,0,0.4);}}
-  .stTabs [aria-selected="true"]{{background:rgba(42, 34, 33, 0.8) !important;color:#e58d57 !important;
-    border:1px solid rgba(229, 141, 87, 0.6) !important;box-shadow:0 0 20px rgba(229, 141, 87, .2);}}
+  .stTabs [data-baseweb="tab"]{{height:40px;border-radius:14px;font-size:13.5px;font-weight:600;color:#c0c0cc;padding:0 24px;
+                               background:rgba(40, 38, 50, 0.6); border:1px solid rgba(255, 255, 255, 0.05);
+                               backdrop-filter: blur(16px); -webkit-backdrop-filter: blur(16px); transition:all 0.2s; box-shadow: none;}}
+  .stTabs [data-baseweb="tab"]:hover{{background:rgba(55, 52, 70, 0.8); border:1px solid rgba(255, 255, 255, 0.15); color:#ffffff;}}
+  .stTabs [aria-selected="true"]{{background:rgba(229, 141, 87, 0.15) !important;color:#f3d7ba !important;
+    border:1px solid rgba(229, 141, 87, 0.6) !important;box-shadow: 0 0 20px rgba(229, 141, 87, 0.15), inset 0 0 10px rgba(229, 141, 87, 0.1) !important;}}
   .stTabs [data-baseweb="tab-highlight"], .stTabs [data-baseweb="tab-border"]{{display:none !important;}}
 
   /* ══ JI PANEL ══ */

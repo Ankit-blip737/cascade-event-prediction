@@ -35,22 +35,22 @@ st.set_page_config(page_title="CASCADE · Traffic Intelligence Command Center", 
 # Pinot Noir — Custom Solid Variations
 BG = "transparent"
 # Hero & Callout: Warm Copper-Slate
-HERO_BG = "rgba(255, 255, 255, 0.3)"; HERO_LINE = "rgba(255, 255, 255, 0.5)"
+HERO_BG = "rgba(25, 25, 35, 0.4)"; HERO_LINE = "rgba(255, 255, 255, 0.08)"
 # KPIs: Cool Teal-Slate
-KPI_BG = "rgba(255, 255, 255, 0.3)"; KPI_LINE = "rgba(255, 255, 255, 0.5)"
+KPI_BG = "rgba(25, 25, 35, 0.4)"; KPI_LINE = "rgba(255, 255, 255, 0.08)"
 # Map & Controls: Pure Navy
-MAP_BG = "rgba(255, 255, 255, 0.3)"; MAP_LINE = "rgba(255, 255, 255, 0.5)"
+MAP_BG = "rgba(25, 25, 35, 0.4)"; MAP_LINE = "rgba(255, 255, 255, 0.08)"
 # Junction Intelligence: Warm Violet-Navy
-JI_BG = "rgba(255, 255, 255, 0.3)"; JI_LINE = "rgba(255, 255, 255, 0.5)"
+JI_BG = "rgba(25, 25, 35, 0.4)"; JI_LINE = "rgba(255, 255, 255, 0.08)"
 # Analysis/Briefing: Deep Purple-Slate
-ANLY_BG = "rgba(255, 255, 255, 0.3)"; ANLY_LINE = "rgba(255, 255, 255, 0.5)"
+ANLY_BG = "rgba(25, 25, 35, 0.4)"; ANLY_LINE = "rgba(255, 255, 255, 0.08)"
 # Worklists: Neutral Steel
-WORK_BG = "rgba(255, 255, 255, 0.3)"; WORK_LINE = "rgba(255, 255, 255, 0.5)"
+WORK_BG = "rgba(25, 25, 35, 0.4)"; WORK_LINE = "rgba(255, 255, 255, 0.08)"
 
 # Universal inputs/inner panels
-PANEL2 = "rgba(255, 255, 255, 0.55)"; LINE = "rgba(255, 255, 255, 0.5)"; LINE2 = "#8a75f5"
-TXT = "#2d2a5c"; MUT = "#57538a"; MUT2 = "#7a77a9"
-AMBER = "#f49f5a"; ORANGE = "#ff8f73"; ROSE = "#ff6b9e"; FUCHSIA = "#a56de2"
+PANEL2 = "rgba(40, 40, 50, 0.4)"; LINE = "rgba(255, 255, 255, 0.08)"; LINE2 = "#8a75f5"
+TXT = "#f5f5f5"; MUT = "#a1a0ab"; MUT2 = "#8e8d9a"
+AMBER = "#8a75f5"; ORANGE = "#9b85f8"; ROSE = "#b5a8fb"; FUCHSIA = "#c6bafb"
 VIOLET = "#8658e8"; CYAN = "#62a8ff"; EMERALD = "#45db9c"
 # perceptual "ocean-fire" heat ramp (low → high) — teal to copper to coral
 HEAT = [(0.0, (20, 72, 90)), (0.22, (40, 108, 130)), (0.45, (76, 160, 176)),
@@ -85,8 +85,8 @@ st.markdown(f"""
   .icard, .callout, .panel, .legend, .ctrl-strip, .ji-panel, .brow, [data-testid="stExpander"] {{
       backdrop-filter: blur(24px);
       -webkit-backdrop-filter: blur(24px);
-      border: 1px solid rgba(255, 255, 255, 0.6) !important;
-      box-shadow: 0 8px 32px 0 rgba(80, 70, 160, 0.15) !important;
+      border: 1px solid rgba(255, 255, 255, 0.08) !important;
+      box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.4) !important;
   }}
   
   /* Animated Background */
@@ -94,11 +94,10 @@ st.markdown(f"""
       content: "";
       position: fixed;
       top: 0; left: 0; right: 0; bottom: 0;
-      background: radial-gradient(circle at 10% 20%, rgba(200, 190, 255, 0.9), transparent 45%),
-                  radial-gradient(circle at 90% 70%, rgba(130, 110, 250, 0.8), transparent 45%),
-                  radial-gradient(circle at 80% 10%, rgba(160, 140, 255, 0.8), transparent 35%),
-                  radial-gradient(circle at 20% 85%, rgba(110, 90, 220, 0.7), transparent 45%);
-      background-color: #8c85e6;
+      background: radial-gradient(circle at 10% 20%, rgba(138, 117, 245, 0.08), transparent 45%),
+                  radial-gradient(circle at 90% 70%, rgba(138, 117, 245, 0.06), transparent 45%),
+                  radial-gradient(circle at 80% 10%, rgba(138, 117, 245, 0.04), transparent 35%);
+      background-color: #121216;
       z-index: -1;
       pointer-events: none;
   }}
@@ -183,10 +182,10 @@ st.markdown(f"""
   /* ══ TABS ══ */
   .stTabs [data-baseweb="tab-list"]{{gap:12px;background:transparent;padding:0;border:none;align-items:center;}}
   .stTabs [data-baseweb="tab"]{{height:42px;border-radius:20px;font-size:13px;font-weight:700;color:{MUT};padding:0 24px;
-                               background:rgba(255, 255, 255, 0.35); border:1px solid rgba(255, 255, 255, 0.6);
-                               backdrop-filter: blur(16px); -webkit-backdrop-filter: blur(16px); transition:all 0.2s; box-shadow: 0 4px 12px rgba(80,70,160,0.1);}}
-  .stTabs [aria-selected="true"]{{background:rgba(255, 255, 255, 0.8) !important;color:#6b52e3 !important;
-    border:1px solid rgba(255, 255, 255, 0.9) !important;box-shadow:0 0 20px rgba(255,255,255,.5);}}
+                               background:rgba(25, 25, 35, 0.5); border:1px solid rgba(255, 255, 255, 0.08);
+                               backdrop-filter: blur(16px); -webkit-backdrop-filter: blur(16px); transition:all 0.2s; box-shadow: 0 4px 12px rgba(0,0,0,0.4);}}
+  .stTabs [aria-selected="true"]{{background:rgba(40, 40, 50, 0.8) !important;color:#8a75f5 !important;
+    border:1px solid rgba(138, 117, 245, 0.6) !important;box-shadow:0 0 20px rgba(138, 117, 245,.2);}}
   .stTabs [data-baseweb="tab-highlight"], .stTabs [data-baseweb="tab-border"]{{display:none !important;}}
 
   /* ══ JI PANEL ══ */

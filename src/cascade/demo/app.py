@@ -35,23 +35,23 @@ st.set_page_config(page_title="CASCADE · Traffic Intelligence Command Center", 
 # Pinot Noir — Custom Solid Variations
 BG = "transparent"
 # Hero & Callout: Warm Copper-Slate
-HERO_BG = "rgba(37, 36, 49, 0.45)"; HERO_LINE = "#343342"
+HERO_BG = "rgba(255, 255, 255, 0.3)"; HERO_LINE = "rgba(255, 255, 255, 0.5)"
 # KPIs: Cool Teal-Slate
-KPI_BG = "rgba(37, 36, 49, 0.45)"; KPI_LINE = "#343342"
+KPI_BG = "rgba(255, 255, 255, 0.3)"; KPI_LINE = "rgba(255, 255, 255, 0.5)"
 # Map & Controls: Pure Navy
-MAP_BG = "rgba(37, 36, 49, 0.45)"; MAP_LINE = "#343342"
+MAP_BG = "rgba(255, 255, 255, 0.3)"; MAP_LINE = "rgba(255, 255, 255, 0.5)"
 # Junction Intelligence: Warm Violet-Navy
-JI_BG = "rgba(37, 36, 49, 0.45)"; JI_LINE = "#343342"
+JI_BG = "rgba(255, 255, 255, 0.3)"; JI_LINE = "rgba(255, 255, 255, 0.5)"
 # Analysis/Briefing: Deep Purple-Slate
-ANLY_BG = "rgba(37, 36, 49, 0.45)"; ANLY_LINE = "#343342"
+ANLY_BG = "rgba(255, 255, 255, 0.3)"; ANLY_LINE = "rgba(255, 255, 255, 0.5)"
 # Worklists: Neutral Steel
-WORK_BG = "rgba(37, 36, 49, 0.45)"; WORK_LINE = "#343342"
+WORK_BG = "rgba(255, 255, 255, 0.3)"; WORK_LINE = "rgba(255, 255, 255, 0.5)"
 
 # Universal inputs/inner panels
-PANEL2 = "rgba(24, 24, 32, 0.45)"; LINE = "#343342"; LINE2 = "#e58d57"
-TXT = "#ffffff"; MUT = "#a1a0ab"; MUT2 = "#8e8d9a"
-AMBER = "#e58d57"; ORANGE = "#d97b42"; ROSE = "#e06c75"; FUCHSIA = "#c678dd"
-VIOLET = "#c678dd"; CYAN = "#61afef"; EMERALD = "#98c379"
+PANEL2 = "rgba(255, 255, 255, 0.55)"; LINE = "rgba(255, 255, 255, 0.5)"; LINE2 = "#8a75f5"
+TXT = "#2d2a5c"; MUT = "#57538a"; MUT2 = "#7a77a9"
+AMBER = "#f49f5a"; ORANGE = "#ff8f73"; ROSE = "#ff6b9e"; FUCHSIA = "#a56de2"
+VIOLET = "#8658e8"; CYAN = "#62a8ff"; EMERALD = "#45db9c"
 # perceptual "ocean-fire" heat ramp (low → high) — teal to copper to coral
 HEAT = [(0.0, (20, 72, 90)), (0.22, (40, 108, 130)), (0.45, (76, 160, 176)),
         (0.66, (212, 149, 107)), (0.84, (232, 146, 106)), (1.0, (232, 112, 122))]
@@ -83,10 +83,10 @@ st.markdown(f"""
 
     /* ══ GLASSMORPHISM ══ */
   .icard, .callout, .panel, .legend, .ctrl-strip, .ji-panel, .brow, [data-testid="stExpander"] {{
-      backdrop-filter: blur(16px);
-      -webkit-backdrop-filter: blur(16px);
-      border: 1px solid rgba(255, 255, 255, 0.08) !important;
-      box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.3) !important;
+      backdrop-filter: blur(24px);
+      -webkit-backdrop-filter: blur(24px);
+      border: 1px solid rgba(255, 255, 255, 0.6) !important;
+      box-shadow: 0 8px 32px 0 rgba(80, 70, 160, 0.15) !important;
   }}
   
   /* Animated Background */
@@ -94,10 +94,11 @@ st.markdown(f"""
       content: "";
       position: fixed;
       top: 0; left: 0; right: 0; bottom: 0;
-      background: radial-gradient(circle at 15% 50%, rgba(229, 141, 87, 0.12), transparent 40%),
-                  radial-gradient(circle at 85% 30%, rgba(97, 175, 239, 0.12), transparent 40%),
-                  radial-gradient(circle at 50% 80%, rgba(198, 120, 221, 0.1), transparent 40%);
-      background-color: #121216;
+      background: radial-gradient(circle at 10% 20%, rgba(200, 190, 255, 0.9), transparent 45%),
+                  radial-gradient(circle at 90% 70%, rgba(130, 110, 250, 0.8), transparent 45%),
+                  radial-gradient(circle at 80% 10%, rgba(160, 140, 255, 0.8), transparent 35%),
+                  radial-gradient(circle at 20% 85%, rgba(110, 90, 220, 0.7), transparent 45%);
+      background-color: #8c85e6;
       z-index: -1;
       pointer-events: none;
   }}
@@ -180,11 +181,13 @@ st.markdown(f"""
     color:{MUT2};text-transform:uppercase;margin-bottom:4px;display:block;}}
 
   /* ══ TABS ══ */
-  .stTabs [data-baseweb="tab-list"]{{gap:5px;background:{PANEL2};padding:6px;border-radius:12px;border:1px solid {WORK_LINE};}}
-  .stTabs [data-baseweb="tab"]{{height:40px;border-radius:8px;font-size:13px;font-weight:600;color:{MUT};padding:0 20px;background:transparent;}}
-  .stTabs [aria-selected="true"]{{background:{WORK_BG} !important;color:{TXT} !important;
-    border:1px solid {LINE2};box-shadow:0 4px 14px -6px rgba(0,0,0,.4);}}
-  .stTabs [data-baseweb="tab-highlight"], .stTabs [data-baseweb="tab-border"]{{display:none !important;}}
+  .stTabs [data-baseweb="tab-list"]{gap:12px;background:transparent;padding:0;border:none;align-items:center;}
+  .stTabs [data-baseweb="tab"]{height:42px;border-radius:20px;font-size:13px;font-weight:700;color:{MUT};padding:0 24px;
+                               background:rgba(255, 255, 255, 0.35); border:1px solid rgba(255, 255, 255, 0.6);
+                               backdrop-filter: blur(16px); -webkit-backdrop-filter: blur(16px); transition:all 0.2s; box-shadow: 0 4px 12px rgba(80,70,160,0.1);}
+  .stTabs [aria-selected="true"]{background:rgba(255, 255, 255, 0.8) !important;color:#6b52e3 !important;
+    border:1px solid rgba(255, 255, 255, 0.9) !important;box-shadow:0 0 20px rgba(255,255,255,.5);}
+  .stTabs [data-baseweb="tab-highlight"], .stTabs [data-baseweb="tab-border"]{display:none !important;}}
 
   /* ══ JI PANEL ══ */
   .ji-panel{{display:flex;align-items:center;justify-content:space-between;

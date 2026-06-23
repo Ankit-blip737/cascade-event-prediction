@@ -103,9 +103,7 @@ st.markdown(f"""
   }}
 
   /* ══ HERO ══ */
-  .topbar{{display:flex;align-items:center;gap:14px;padding:15px 22px;margin-bottom:24px;
-    background:{HERO_BG}; border:1px solid {HERO_LINE};border-radius:12px;
-    box-shadow:0 6px 20px -8px rgba(0,0,0,.6);}}
+  .topbar{{display:flex;align-items:center;gap:14px;padding:15px 22px;margin-bottom:24px; background:{HERO_BG}; border:1px solid rgba(255,255,255,0.1); border-top: 1px solid rgba(255,255,255,0.2); box-shadow: 0 8px 32px rgba(0,0,0,0.5), 0 0 30px rgba(138, 117, 245, 0.15);}}
   .topbar .mark{{width:42px;height:42px;border-radius:12px;display:flex;align-items:center;justify-content:center;
     background:{HERO_LINE};color:{TXT};}}
   .topbar .wm{{font-size:22px;font-weight:900;letter-spacing:.5px;color:{TXT};}}
@@ -120,13 +118,11 @@ st.markdown(f"""
   @keyframes pulse{{0%{{box-shadow:0 0 0 0 rgba(88,216,160,.6);}}70%{{box-shadow:0 0 0 8px rgba(88,216,160,0);}}100%{{box-shadow:0 0 0 0 rgba(88,216,160,0);}}}}
 
   /* ══ KPI CARDS ══ */
-  .icard{{position:relative;overflow:hidden;border:1px solid {HERO_LINE};border-radius:12px;padding:18px;
-    background:{HERO_BG};
-    box-shadow:0 4px 12px -4px rgba(0,0,0,.3);transition:transform .16s, border-color .25s, box-shadow .25s;}}
+  .icard{{position:relative;overflow:hidden;border:1px solid {HERO_LINE};border-radius:12px;padding:18px; background:{HERO_BG}; box-shadow: 0 8px 24px rgba(0,0,0,0.4), inset 0 15px 30px -15px var(--glow); transition:transform .16s, border-color .25s, box-shadow .25s;}}
   .icard:hover{{transform:translateY(-3px);border-color:var(--ac);
     box-shadow:0 12px 24px -10px rgba(0,0,0,.6);}}
   .icard::before{{content:"";position:absolute;left:0;top:0;height:3px;width:100%;background:var(--ac);opacity:1;}}
-  .icard::after{{display:none;}} /* Disable glowing radial blobs for professional look */
+  .icard::after{{content:"";position:absolute;top:-60px;right:-40px;width:140px;height:140px;background:radial-gradient(circle, var(--glow) 0%, transparent 60%);opacity:0.9;pointer-events:none;}}
   .icard .chip2{{width:34px;height:34px;border-radius:8px;display:flex;align-items:center;justify-content:center;margin-bottom:12px;}}
   .icard .v{{font-size:29px;font-weight:900;letter-spacing:-1px;line-height:1;color:{TXT};}}
   .icard .l{{margin-top:8px;color:{MUT};font-size:10.5px;font-weight:700;text-transform:uppercase;letter-spacing:.8px;}}

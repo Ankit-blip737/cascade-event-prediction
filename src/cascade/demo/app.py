@@ -759,9 +759,10 @@ with tab_work:
     bdf = pd.DataFrame(plan.get("barricades", []))
     if not bdf.empty:
         bdf = bdf[["junction", "closure_prob", "burden_min"]].copy()
+        bdf["closure_prob"] = bdf["closure_prob"] * 100
         bdf.columns = ["Junction", "P(closure)", "Burden (min)"]
         st.dataframe(bdf, hide_index=True, use_container_width=True, height=220, column_config={
-            "P(closure)": st.column_config.ProgressColumn(format="%.0f%%", min_value=0, max_value=1),
+            "P(closure)": st.column_config.ProgressColumn(format="%d%%", min_value=0, max_value=100),
             "Burden (min)": st.column_config.NumberColumn(format="%.0f")})
     vspace(20)
     section("Diversion Routing")

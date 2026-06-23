@@ -33,22 +33,22 @@ st.set_page_config(page_title="CASCADE · Traffic Intelligence Command Center", 
                    layout="wide", initial_sidebar_state="collapsed")
 
 # Pinot Noir — Custom Solid Variations
-BG = "#1e1e24"
+BG = "transparent"
 # Hero & Callout: Warm Copper-Slate
-HERO_BG = "#252431"; HERO_LINE = "#343342"
+HERO_BG = "rgba(37, 36, 49, 0.45)"; HERO_LINE = "#343342"
 # KPIs: Cool Teal-Slate
-KPI_BG = "#252431"; KPI_LINE = "#343342"
+KPI_BG = "rgba(37, 36, 49, 0.45)"; KPI_LINE = "#343342"
 # Map & Controls: Pure Navy
-MAP_BG = "#252431"; MAP_LINE = "#343342"
+MAP_BG = "rgba(37, 36, 49, 0.45)"; MAP_LINE = "#343342"
 # Junction Intelligence: Warm Violet-Navy
-JI_BG = "#252431"; JI_LINE = "#343342"
+JI_BG = "rgba(37, 36, 49, 0.45)"; JI_LINE = "#343342"
 # Analysis/Briefing: Deep Purple-Slate
-ANLY_BG = "#252431"; ANLY_LINE = "#343342"
+ANLY_BG = "rgba(37, 36, 49, 0.45)"; ANLY_LINE = "#343342"
 # Worklists: Neutral Steel
-WORK_BG = "#252431"; WORK_LINE = "#343342"
+WORK_BG = "rgba(37, 36, 49, 0.45)"; WORK_LINE = "#343342"
 
 # Universal inputs/inner panels
-PANEL2 = "#181820"; LINE = "#343342"; LINE2 = "#e58d57"
+PANEL2 = "rgba(24, 24, 32, 0.45)"; LINE = "#343342"; LINE2 = "#e58d57"
 TXT = "#ffffff"; MUT = "#a1a0ab"; MUT2 = "#8e8d9a"
 AMBER = "#e58d57"; ORANGE = "#d97b42"; ROSE = "#e06c75"; FUCHSIA = "#c678dd"
 VIOLET = "#c678dd"; CYAN = "#61afef"; EMERALD = "#98c379"
@@ -80,6 +80,27 @@ st.markdown(f"""
   ::-webkit-scrollbar-thumb:hover{{background:#3D4B6A;}} ::-webkit-scrollbar-track{{background:transparent;}}
   .stTabs [data-baseweb="tab-panel"]{{padding-top:2.3rem;}}
   [data-testid="stVerticalBlock"]{{gap:.65rem;}}
+
+    /* ══ GLASSMORPHISM ══ */
+  .icard, .callout, .panel, .legend, .ctrl-strip, .ji-panel, .brow, [data-testid="stExpander"] {
+      backdrop-filter: blur(16px);
+      -webkit-backdrop-filter: blur(16px);
+      border: 1px solid rgba(255, 255, 255, 0.08) !important;
+      box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.3) !important;
+  }
+  
+  /* Animated Background */
+  .stApp::before {
+      content: "";
+      position: fixed;
+      top: 0; left: 0; right: 0; bottom: 0;
+      background: radial-gradient(circle at 15% 50%, rgba(229, 141, 87, 0.12), transparent 40%),
+                  radial-gradient(circle at 85% 30%, rgba(97, 175, 239, 0.12), transparent 40%),
+                  radial-gradient(circle at 50% 80%, rgba(198, 120, 221, 0.1), transparent 40%);
+      background-color: #121216;
+      z-index: -1;
+      pointer-events: none;
+  }
 
   /* ══ HERO ══ */
   .topbar{{display:flex;align-items:center;gap:14px;padding:15px 22px;margin-bottom:24px;

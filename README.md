@@ -9,8 +9,6 @@ pinned: false
 
 # 🚦 CASCADE — Bengaluru Traffic Intelligence
 
-**🌍 Live Demo:** [https://ankit-lip-cascade.hf.space/](https://ankit-lip-cascade.hf.space/)
-
 **Event-driven congestion forecasting & resource dispatch for the Bengaluru Traffic Police.**
 Built for the Flipkart × BTP **Gridlock Hackathon 2.0** (Round 2) on the provided ASTRAM incident log.
 

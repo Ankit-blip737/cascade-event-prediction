@@ -25,13 +25,6 @@ Thumbs.db
 # Jupyter
 .ipynb_checkpoints/
 
-# Claude / Gemini
-.claude/
-.gemini/
-.agents/
-CLAUDE.md
-HANDOFF.md
-
 # Misc
 *.log
 

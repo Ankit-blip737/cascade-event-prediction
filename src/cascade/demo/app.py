@@ -698,7 +698,7 @@ with tab_model:
         with g1:
             st.plotly_chart(fig_gauge(float(row["closure"]) * 100, "P(road closure)", AMBER), **PLOT)
         with g2:
-            st.plotly_chart(fig_gauge(sev, "Severity index", FUCHSIA), **PLOT)
+            st.plotly_chart(fig_gauge(sev, "Severity index", AMBER), **PLOT)
     vspace(20)
     section("RL Dispatcher vs Greedy Baseline")
     st.plotly_chart(fig_marl(disp), **PLOT)

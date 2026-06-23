@@ -32,26 +32,20 @@ CLEAR_CAP = 180.0
 st.set_page_config(page_title="CASCADE · Traffic Intelligence Command Center", page_icon="C",
                    layout="wide", initial_sidebar_state="collapsed")
 
-# Pinot Noir — Custom Solid Variations
+# Navy/Indigo UX — Custom Solid Variations
 BG = "transparent"
-# Hero & Callout: Warm Copper-Slate
-HERO_BG = "rgba(25, 25, 35, 0.4)"; HERO_LINE = "rgba(255, 255, 255, 0.08)"
-# KPIs: Cool Teal-Slate
-KPI_BG = "rgba(25, 25, 35, 0.4)"; KPI_LINE = "rgba(255, 255, 255, 0.08)"
-# Map & Controls: Pure Navy
-MAP_BG = "rgba(25, 25, 35, 0.4)"; MAP_LINE = "rgba(255, 255, 255, 0.08)"
-# Junction Intelligence: Warm Violet-Navy
-JI_BG = "rgba(25, 25, 35, 0.4)"; JI_LINE = "rgba(255, 255, 255, 0.08)"
-# Analysis/Briefing: Deep Purple-Slate
-ANLY_BG = "rgba(25, 25, 35, 0.4)"; ANLY_LINE = "rgba(255, 255, 255, 0.08)"
-# Worklists: Neutral Steel
-WORK_BG = "rgba(25, 25, 35, 0.4)"; WORK_LINE = "rgba(255, 255, 255, 0.08)"
+HERO_BG = "rgba(26, 29, 46, 0.6)"; HERO_LINE = "rgba(255, 255, 255, 0.06)"
+KPI_BG = "rgba(26, 29, 46, 0.6)"; KPI_LINE = "rgba(255, 255, 255, 0.06)"
+MAP_BG = "rgba(26, 29, 46, 0.6)"; MAP_LINE = "rgba(255, 255, 255, 0.06)"
+JI_BG = "rgba(26, 29, 46, 0.6)"; JI_LINE = "rgba(255, 255, 255, 0.06)"
+ANLY_BG = "rgba(26, 29, 46, 0.6)"; ANLY_LINE = "rgba(255, 255, 255, 0.06)"
+WORK_BG = "rgba(26, 29, 46, 0.6)"; WORK_LINE = "rgba(255, 255, 255, 0.06)"
 
 # Universal inputs/inner panels
-PANEL2 = "rgba(40, 40, 50, 0.4)"; LINE = "rgba(255, 255, 255, 0.08)"; LINE2 = "#8a75f5"
-TXT = "#f5f5f5"; MUT = "#a1a0ab"; MUT2 = "#8e8d9a"
-AMBER = "#8a75f5"; ORANGE = "#9b85f8"; ROSE = "#b5a8fb"; FUCHSIA = "#c6bafb"
-VIOLET = "#8658e8"; CYAN = "#62a8ff"; EMERALD = "#45db9c"
+PANEL2 = "rgba(24, 27, 42, 0.6)"; LINE = "rgba(255, 255, 255, 0.08)"; LINE2 = "#f09853"
+TXT = "#ffffff"; MUT = "#838d9d"; MUT2 = "#5a6376"
+AMBER = "#f09853"; ORANGE = "#e57e3f"; ROSE = "#ff8e8b"; FUCHSIA = "#d784fa"
+VIOLET = "#8a75f5"; CYAN = "#58a6ff"; EMERALD = "#26e289" 
 # perceptual "ocean-fire" heat ramp (low → high) — teal to copper to coral
 HEAT = [(0.0, (20, 72, 90)), (0.22, (40, 108, 130)), (0.45, (76, 160, 176)),
         (0.66, (212, 149, 107)), (0.84, (232, 146, 106)), (1.0, (232, 112, 122))]
@@ -97,7 +91,7 @@ st.markdown(f"""
       background: radial-gradient(90% 90% at 10% 0%, rgba(229, 141, 87, 0.08), transparent),
                   radial-gradient(90% 90% at 90% 10%, rgba(138, 117, 245, 0.08), transparent),
                   radial-gradient(100% 100% at 50% 100%, rgba(138, 117, 245, 0.05), transparent);
-      background-color: #181820;
+      background-color: #16192b;
       z-index: -1;
       pointer-events: none;
   }}

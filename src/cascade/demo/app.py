@@ -33,25 +33,25 @@ st.set_page_config(page_title="CASCADE · Traffic Intelligence Command Center", 
                    layout="wide", initial_sidebar_state="collapsed")
 
 # Pinot Noir — Custom Solid Variations
-BG = "#152038"
+BG = "#1e1e24"
 # Hero & Callout: Warm Copper-Slate
-HERO_BG = "#1c2445"; HERO_LINE = "#2b3666"
+HERO_BG = "#252431"; HERO_LINE = "#343342"
 # KPIs: Cool Teal-Slate
-KPI_BG = "#162842"; KPI_LINE = "#22456e"
+KPI_BG = "#252431"; KPI_LINE = "#343342"
 # Map & Controls: Pure Navy
-MAP_BG = "#1a253f"; MAP_LINE = "#283a66"
+MAP_BG = "#252431"; MAP_LINE = "#343342"
 # Junction Intelligence: Warm Violet-Navy
-JI_BG = "#192542"; JI_LINE = "#283a62"
+JI_BG = "#252431"; JI_LINE = "#343342"
 # Analysis/Briefing: Deep Purple-Slate
-ANLY_BG = "#1f1d40"; ANLY_LINE = "#302c66"
+ANLY_BG = "#252431"; ANLY_LINE = "#343342"
 # Worklists: Neutral Steel
-WORK_BG = "#1d273d"; WORK_LINE = "#2b3b5c"
+WORK_BG = "#252431"; WORK_LINE = "#343342"
 
 # Universal inputs/inner panels
-PANEL2 = "#18233a"; LINE = "#293b5d"; LINE2 = "#4b6cb7"
-TXT = "#edf2f7"; MUT = "#94a8c0"; MUT2 = "#637a92"
-AMBER = "#e8a460"; ORANGE = "#f09060"; ROSE = "#f06878"; FUCHSIA = "#d070e8"
-VIOLET = "#90a8f0"; CYAN = "#50d0f8"; EMERALD = "#58d8a0"
+PANEL2 = "#181820"; LINE = "#343342"; LINE2 = "#e58d57"
+TXT = "#ffffff"; MUT = "#a1a0ab"; MUT2 = "#8e8d9a"
+AMBER = "#e58d57"; ORANGE = "#d97b42"; ROSE = "#e06c75"; FUCHSIA = "#c678dd"
+VIOLET = "#c678dd"; CYAN = "#61afef"; EMERALD = "#98c379"
 # perceptual "ocean-fire" heat ramp (low → high) — teal to copper to coral
 HEAT = [(0.0, (20, 72, 90)), (0.22, (40, 108, 130)), (0.45, (76, 160, 176)),
         (0.66, (212, 149, 107)), (0.84, (232, 146, 106)), (1.0, (232, 112, 122))]

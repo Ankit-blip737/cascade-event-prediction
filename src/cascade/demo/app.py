@@ -117,14 +117,13 @@ st.markdown(f"""
   .chip.live .cv{{color:#e58d57;display:flex;align-items:center;gap:6px;justify-content:flex-end; text-shadow: 0 0 10px rgba(229, 141, 87, 0.3);}}
   .chip.live .cl{{color:rgba(229, 141, 87, 0.8);}}
   .pulse{{width:8px;height:8px;border-radius:50%;background:#e58d57;animation:pulse 1.8s infinite;}}
-  @keyframes pulse{{0%{{box-shadow:0 0 0 0 rgba(229,141,87,.6);}}70%{{box-shadow:0 0 0 8px rgba(229,141,87,0);}}100%{{box-shadow:0 0 0 0 rgba(229,141,87,0);}}}}70%{{box-shadow:0 0 0 8px rgba(88,216,160,0);}}100%{{box-shadow:0 0 0 0 rgba(88,216,160,0);}}}}
+  @keyframes pulse{{0%{{box-shadow:0 0 0 0 rgba(229,141,87,.6);}}70%{{box-shadow:0 0 0 8px rgba(229,141,87,0);}}100%{{box-shadow:0 0 0 0 rgba(229,141,87,0);}}}}
 
   /* ══ KPI CARDS ══ */
-  .icard{{position:relative;overflow:hidden;border:1px solid {HERO_LINE};border-radius:12px;padding:18px; background:{HERO_BG}; box-shadow: 0 8px 24px rgba(0,0,0,0.4), inset 0 15px 30px -15px var(--glow); transition:transform .16s, border-color .25s, box-shadow .25s;}}
-  .icard:hover{{transform:translateY(-3px);border-color:var(--ac);
-    box-shadow:0 12px 24px -10px rgba(0,0,0,.6);}}
-  .icard::before{{content:"";position:absolute;left:0;top:0;height:3px;width:100%;background:var(--ac);opacity:1;}}
-  .icard::after{{content:"";position:absolute;top:-60px;right:-40px;width:140px;height:140px;background:radial-gradient(circle, var(--glow) 0%, transparent 60%);opacity:0.9;pointer-events:none;}}
+  .icard{{position:relative;overflow:hidden;border:1px solid rgba(255,255,255,0.05);border-radius:12px;padding:18px; background:rgba(30, 28, 40, 0.6); box-shadow: 0 4px 12px rgba(0,0,0,0.3), 0 0 15px var(--glow); transition:transform .16s, border-color .25s, box-shadow .25s;}}
+  .icard:hover{{transform:translateY(-3px);border-color:var(--ac); box-shadow:0 12px 24px rgba(0,0,0,0.5), 0 0 25px var(--glow);}}
+  .icard::before{{display:none;}}
+  .icard::after{{content:"";position:absolute;top:-60px;right:-40px;width:140px;height:140px;background:radial-gradient(circle, var(--glow) 0%, transparent 60%);opacity:0.25;pointer-events:none;}}
   .icard .chip2{{width:34px;height:34px;border-radius:8px;display:flex;align-items:center;justify-content:center;margin-bottom:12px;}}
   .icard .v{{font-size:29px;font-weight:900;letter-spacing:-1px;line-height:1;color:{TXT};}}
   .icard .l{{margin-top:8px;color:{MUT};font-size:10.5px;font-weight:700;text-transform:uppercase;letter-spacing:.8px;}}

@@ -82,15 +82,15 @@ st.markdown(f"""
   [data-testid="stVerticalBlock"]{{gap:.65rem;}}
 
     /* ══ GLASSMORPHISM ══ */
-  .icard, .callout, .panel, .legend, .ctrl-strip, .ji-panel, .brow, [data-testid="stExpander"] {
+  .icard, .callout, .panel, .legend, .ctrl-strip, .ji-panel, .brow, [data-testid="stExpander"] {{
       backdrop-filter: blur(16px);
       -webkit-backdrop-filter: blur(16px);
       border: 1px solid rgba(255, 255, 255, 0.08) !important;
       box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.3) !important;
-  }
+  }}
   
   /* Animated Background */
-  .stApp::before {
+  .stApp::before {{
       content: "";
       position: fixed;
       top: 0; left: 0; right: 0; bottom: 0;
@@ -100,7 +100,7 @@ st.markdown(f"""
       background-color: #121216;
       z-index: -1;
       pointer-events: none;
-  }
+  }}
 
   /* ══ HERO ══ */
   .topbar{{display:flex;align-items:center;gap:14px;padding:15px 22px;margin-bottom:24px;

@@ -29,6 +29,14 @@ project. By mathematically isolating true impact, CASCADE allows a commander to 
 
 ---
 
+## 🗺️ MapMyIndia Partner Integration
+
+As per the partner guidelines, CASCADE **actively integrates the MapMyIndia (Mappls) REST API** into our backend core. 
+
+While the frontend 3D rendering uses standard WebGL, our backend **Decision Engine** leverages the MapMyIndia API to calculate exact distances, drive-times (ETAs), and accurate road-snapping for all recommended barricades and traffic diversions. 
+
+---
+
 ## 🏗️ Architecture Pipeline
 
 To understand CASCADE, you must understand how data flows from a raw CSV file to an optimal police dispatch order. Below is the system architecture:
@@ -148,7 +156,7 @@ streamlit run src/cascade/demo/app.py
   docker build -t cascade . 
   docker run -p 8501:8501 cascade
   ```
-- *(Optional)* Set `MAPPLS_KEY=...` as an environment variable to enable the Mappls (MapmyIndia) basemap and real-route diversions. Without it, the app safely auto-falls back to the free CARTO basemap and offline routing.
+- **MapMyIndia Partner API:** The backend uses the MapMyIndia (Mappls) REST API for highly accurate road-snap and real-route diversions. Set `MAPPLS_KEY=...` as an environment variable or Hugging Face secret to activate the live routing engine.
 
 ---
 

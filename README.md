@@ -31,9 +31,9 @@ project. By mathematically isolating true impact, CASCADE allows a commander to 
 
 ## 🗺️ MapMyIndia Partner Integration
 
-As per the partner guidelines, CASCADE **actively integrates the MapMyIndia (Mappls) REST API** into our backend core. 
+As per the guidelines, CASCADE **actively integrates the MapMyIndia (Mappls) REST API** into our backend core. 
 
-While the frontend 3D rendering uses standard WebGL, our backend **Decision Engine** leverages the MapMyIndia API to calculate exact distances, drive-times (ETAs), and accurate road-snapping for all recommended barricades and traffic diversions. 
+our backend **Decision Engine** leverages the MapMyIndia API to calculate exact distances, drive-times (ETAs), and accurate road-snapping for all recommended barricades and traffic diversions. 
 
 ---
 

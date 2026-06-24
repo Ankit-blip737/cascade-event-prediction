@@ -35,6 +35,9 @@ As per the guidelines, CASCADE **actively integrates the MapMyIndia (Mappls) RES
 
 our backend **Decision Engine** leverages the MapMyIndia API to calculate exact distances, drive-times (ETAs), and accurate road-snapping for all recommended barricades and traffic diversions. 
 
+**🛡️ Enterprise Fail-Safe & Offline Fallback:**
+Because emergency police systems cannot afford downtime, our MapMyIndia integration is built with a highly resilient fail-safe. If the API key expires, encounters a 401 Unauthorized error, or the server drops connection, CASCADE instantly catches the failure and seamlessly falls back to an offline mathematical routing algorithm. The Command Center will never crash during an emergency.
+
 ---
 
 ## 🏗️ Architecture Pipeline
